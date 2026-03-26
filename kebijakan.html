@@ -5,153 +5,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kebijakan - Myco-Tech</title>
     <link rel="stylesheet" href="github-minimal.css">
-
 </head>
-<body>
-    <div class="container">
-        <header>
-            <div class="logo-container">
-                <img src="https://github.com/user-attachments/assets/9de145b4-b16b-4ec4-9e88-2803e3b518d2" alt="HIMAIF Logo" class="logo-badge">
-                <img src="https://github.com/user-attachments/assets/6850b4f9-d61d-4342-aac4-dbf854c01710" alt="Myco-Tech Logo" class="logo-badge">
-                <img src="https://github.com/user-attachments/assets/629c12f6-d21f-46af-bb81-4cb589981cd7" alt="HIMALOGI Logo" class="logo-badge">
-            </div>
-            <div class="nav">
-                <a href="index.html">← Kembali ke Beranda</a>
-                <a href="tupoksi.html">Tupoksi</a>
-                <a href="profile-tim.html">Profil Tim</a>
-                <a href="dokumentasi.html">Dokumentasi</a>
-                <a href="ketentuan.html">Ketentuan</a>
-            </div>
-            <h1>Kebijakan Proyek</h1>
-            <p>Tim Myco-Tech - HIMAIF × HIMALOGI</p>
-        </header>
+<body class="docs-page">
 
-        <main>
-            <section>
-                <h2>Kebijakan Umum</h2>
-                <p>Kebijakan proyek Myco-Tech disusun untuk memastikan pelaksanaan proyek berjalan dengan efektif, efisien, dan memberikan manfaat maksimal bagi masyarakat Desa Cirateun Kulon serta seluruh stakeholder yang terlibat.</p>
-            </section>
+    <!-- Sticky top header -->
+    <header class="docs-top-header">
+        <div class="logo-container">
+            <img src="https://github.com/user-attachments/assets/9de145b4-b16b-4ec4-9e88-2803e3b518d2" alt="HIMAIF Logo" class="logo-badge">
+            <img src="https://github.com/user-attachments/assets/6850b4f9-d61d-4342-aac4-dbf854c01710" alt="Myco-Tech Logo" class="logo-badge">
+            <img src="https://github.com/user-attachments/assets/629c12f6-d21f-46af-bb81-4cb589981cd7" alt="HIMALOGI Logo" class="logo-badge">
+        </div>
+        <span class="docs-site-title">Myco-<span>Tech</span></span>
+        <button class="sidebar-toggle-btn" onclick="toggleSidebar()" aria-label="Toggle sidebar">☰</button>
+    </header>
 
-            <section>
-                <h2>Kebijakan Operasional</h2>
+    <div id="sidebar-backdrop" class="sidebar-backdrop" onclick="closeSidebar()"></div>
 
-                <div class="policy-card">
-                    <h3>1. Kebijakan Kehadiran & Kunjungan Lapangan</h3>
-                    <ul>
-                        <li>Setiap anggota tim wajib melakukan minimal <strong>10 kunjungan intensif</strong> ke lokasi proyek selama periode pelaksanaan.</li>
-                        <li>Setiap kunjungan lapangan harus didokumentasikan dengan foto, video, dan laporan singkat.</li>
-                        <li>Jadwal kunjungan dikoordinasikan melalui Project Manager untuk memastikan efisiensi waktu dan tenaga.</li>
-                        <li>Dalam kondisi darurat atau masalah teknis, tim terkait harus siap melakukan kunjungan insidental.</li>
-                    </ul>
+    <div class="docs-wrapper">
+
+        <!-- Left sidebar -->
+        <aside class="docs-sidebar" id="docs-sidebar">
+            <nav class="sidebar-nav" aria-label="Sidebar navigation">
+
+                <div class="sidebar-nav-section">
+                    <span class="sidebar-nav-section-title">Halaman</span>
+                    <a href="index.html" class="sidebar-nav-link">🏠 Beranda</a>
+                    <a href="tupoksi.html" class="sidebar-nav-link">📋 Tupoksi</a>
+                    <a href="profile-tim.html" class="sidebar-nav-link">👥 Profil Tim</a>
+                    <a href="dokumentasi.html" class="sidebar-nav-link">📚 Dokumentasi</a>
+                    <a href="kebijakan.html" class="sidebar-nav-link active">📜 Kebijakan</a>
+                    <a href="ketentuan.html" class="sidebar-nav-link">⚖️ Ketentuan</a>
                 </div>
 
-                <div class="policy-card">
-                    <h3>2. Kebijakan Keamanan Data & Privasi</h3>
-                    <ul>
-                        <li>Semua data mikroklimat dan data produksi disimpan dengan enkripsi di cloud database.</li>
-                        <li>Akses ke database hanya diberikan kepada anggota tim yang berwenang.</li>
-                        <li>Data pribadi petani dan mitra dijaga kerahasiaannya sesuai dengan prinsip perlindungan data.</li>
-                        <li>Publikasi data harus mendapat persetujuan dari stakeholder terkait.</li>
-                    </ul>
+                <hr class="sidebar-divider">
+
+                <div class="sidebar-nav-section">
+                    <span class="sidebar-nav-section-title">Di Halaman Ini</span>
+                    <a href="#umum" class="sidebar-nav-link section-link">Kebijakan Umum</a>
+                    <a href="#operasional" class="sidebar-nav-link section-link">Kebijakan Operasional</a>
+                    <a href="#kolaborasi" class="sidebar-nav-link section-link">Kolaborasi & Komunikasi</a>
+                    <a href="#sustainability" class="sidebar-nav-link section-link">Sustainability & Lingkungan</a>
+                    <a href="#etika" class="sidebar-nav-link section-link">Etika & Integritas</a>
+                    <a href="#revisi" class="sidebar-nav-link section-link">Revisi & Pembaruan</a>
                 </div>
 
-                <div class="policy-card">
-                    <h3>3. Kebijakan Keuangan & Anggaran</h3>
-                    <ul>
-                        <li>Setiap pengeluaran harus disertai dengan bukti pembayaran dan dokumentasi yang jelas.</li>
-                        <li>Laporan keuangan dibuat secara berkala dan dipresentasikan kepada stakeholder.</li>
-                        <li>Penggunaan dana harus sesuai dengan rencana anggaran yang telah disetujui.</li>
-                        <li>Setiap perubahan anggaran harus diajukan dan mendapat persetujuan terlebih dahulu.</li>
-                    </ul>
-                </div>
+            </nav>
+        </aside>
 
-                <div class="policy-card">
-                    <h3>4. Kebijakan Teknologi & Perangkat</h3>
-                    <ul>
-                        <li>Semua perangkat IoT harus melalui tahap testing dan kalibrasi sebelum dipasang di lapangan.</li>
-                        <li>Maintenance perangkat dilakukan secara rutin setiap 2 minggu sekali atau sesuai kebutuhan.</li>
-                        <li>Backup data dilakukan secara otomatis setiap hari untuk mencegah kehilangan data.</li>
-                        <li>Penggunaan teknologi harus mempertimbangkan kemudahan penggunaan oleh petani lokal.</li>
-                    </ul>
-                </div>
-            </section>
+        <!-- Main content -->
+        <div class="docs-main">
+            <header>
+                <h1>Kebijakan Proyek</h1>
+                <p>Tim Myco-Tech - HIMAIF × HIMALOGI</p>
+            </header>
 
-            <section>
-                <h2>Kebijakan Kolaborasi & Komunikasi</h2>
+            <main>
+                <section id="umum">
+                    <h2>Kebijakan Umum</h2>
+                    <p>Kebijakan proyek Myco-Tech disusun untuk memastikan pelaksanaan proyek berjalan dengan efektif, efisien, dan memberikan manfaat maksimal bagi masyarakat Desa Cirateun Kulon serta seluruh stakeholder yang terlibat.</p>
+                </section>
 
-                <div class="policy-card">
-                    <h3>5. Kebijakan Komunikasi Internal</h3>
-                    <ul>
-                        <li>Rapat koordinasi tim dilakukan minimal 1 kali per minggu secara online atau offline.</li>
-                        <li>Setiap departemen wajib membuat laporan progress mingguan.</li>
-                        <li>Komunikasi urgent dilakukan melalui platform chat grup yang telah disepakati.</li>
-                        <li>Setiap keputusan penting harus didokumentasikan dan dikomunikasikan kepada seluruh anggota tim.</li>
-                    </ul>
-                </div>
+                <section id="operasional">
+                    <h2>Kebijakan Operasional</h2>
 
-                <div class="policy-card">
-                    <h3>6. Kebijakan Kemitraan dengan Masyarakat</h3>
-                    <ul>
-                        <li>Melibatkan Kelompok Tani Desa dalam setiap tahap pelaksanaan proyek.</li>
-                        <li>Menghormati budaya lokal dan kearifan lokal dalam implementasi teknologi.</li>
-                        <li>Memberikan workshop dan pelatihan gratis kepada petani mitra.</li>
-                        <li>Membangun hubungan yang berkelanjutan dengan masyarakat desa.</li>
-                    </ul>
-                </div>
-            </section>
+                    <div class="policy-card">
+                        <h3>1. Kebijakan Kehadiran & Kunjungan Lapangan</h3>
+                        <ul>
+                            <li>Setiap anggota tim wajib melakukan minimal <strong>10 kunjungan intensif</strong> ke lokasi proyek selama periode pelaksanaan.</li>
+                            <li>Setiap kunjungan lapangan harus didokumentasikan dengan foto, video, dan laporan singkat.</li>
+                            <li>Jadwal kunjungan dikoordinasikan melalui Project Manager untuk memastikan efisiensi waktu dan tenaga.</li>
+                            <li>Dalam kondisi darurat atau masalah teknis, tim terkait harus siap melakukan kunjungan insidental.</li>
+                        </ul>
+                    </div>
 
-            <section>
-                <h2>Kebijakan Sustainability & Lingkungan</h2>
+                    <div class="policy-card">
+                        <h3>2. Kebijakan Keamanan Data & Privasi</h3>
+                        <ul>
+                            <li>Semua data mikroklimat dan data produksi disimpan dengan enkripsi di cloud database.</li>
+                            <li>Akses ke database hanya diberikan kepada anggota tim yang berwenang.</li>
+                            <li>Data pribadi petani dan mitra dijaga kerahasiaannya sesuai dengan prinsip perlindungan data.</li>
+                            <li>Publikasi data harus mendapat persetujuan dari stakeholder terkait.</li>
+                        </ul>
+                    </div>
 
-                <div class="policy-card">
-                    <h3>7. Kebijakan Ramah Lingkungan</h3>
-                    <ul>
-                        <li>Menggunakan energi terbarukan (panel surya) sebagai sumber energi utama.</li>
-                        <li>Meminimalkan penggunaan bahan kimia dalam proses budidaya jamur.</li>
-                        <li>Pengelolaan limbah organik menjadi kompos atau media tanam.</li>
-                        <li>Mendorong praktik pertanian berkelanjutan.</li>
-                    </ul>
-                </div>
+                    <div class="policy-card">
+                        <h3>3. Kebijakan Keuangan & Anggaran</h3>
+                        <ul>
+                            <li>Setiap pengeluaran harus disertai dengan bukti pembayaran dan dokumentasi yang jelas.</li>
+                            <li>Laporan keuangan dibuat secara berkala dan dipresentasikan kepada stakeholder.</li>
+                            <li>Penggunaan dana harus sesuai dengan rencana anggaran yang telah disetujui.</li>
+                            <li>Setiap perubahan anggaran harus diajukan dan mendapat persetujuan terlebih dahulu.</li>
+                        </ul>
+                    </div>
 
-                <div class="policy-card">
-                    <h3>8. Kebijakan Keberlanjutan Proyek</h3>
-                    <ul>
-                        <li>Memberikan pelatihan intensif kepada petani agar dapat mengelola sistem secara mandiri setelah proyek berakhir.</li>
-                        <li>Menyusun panduan dan SOP yang mudah dipahami untuk maintenance sistem.</li>
-                        <li>Membangun kapasitas lokal untuk troubleshooting masalah teknis sederhana.</li>
-                        <li>Mendorong replikasi proyek ke desa-desa lain di sekitar wilayah.</li>
-                    </ul>
-                </div>
-            </section>
+                    <div class="policy-card">
+                        <h3>4. Kebijakan Teknologi & Perangkat</h3>
+                        <ul>
+                            <li>Semua perangkat IoT harus melalui tahap testing dan kalibrasi sebelum dipasang di lapangan.</li>
+                            <li>Maintenance perangkat dilakukan secara rutin setiap 2 minggu sekali atau sesuai kebutuhan.</li>
+                            <li>Backup data dilakukan secara otomatis setiap hari untuk mencegah kehilangan data.</li>
+                            <li>Penggunaan teknologi harus mempertimbangkan kemudahan penggunaan oleh petani lokal.</li>
+                        </ul>
+                    </div>
+                </section>
 
-            <section>
-                <h2>Kebijakan Etika & Integritas</h2>
+                <section id="kolaborasi">
+                    <h2>Kebijakan Kolaborasi & Komunikasi</h2>
 
-                <div class="important">
-                    <h3>9. Kode Etik Tim</h3>
-                    <ul>
-                        <li><strong>Integritas:</strong> Setiap anggota tim harus menjunjung tinggi kejujuran dan transparansi dalam setiap tindakan.</li>
-                        <li><strong>Profesionalisme:</strong> Menjalankan tugas dengan penuh tanggung jawab dan komitmen tinggi.</li>
-                        <li><strong>Kolaborasi:</strong> Menghargai kontribusi setiap anggota tim dan bekerja sama dengan baik.</li>
-                        <li><strong>Inovasi:</strong> Mendorong kreativitas dan solusi inovatif dalam menghadapi tantangan.</li>
-                        <li><strong>Kepedulian Sosial:</strong> Menempatkan kepentingan masyarakat sebagai prioritas utama.</li>
-                    </ul>
-                </div>
-            </section>
+                    <div class="policy-card">
+                        <h3>5. Kebijakan Komunikasi Internal</h3>
+                        <ul>
+                            <li>Rapat koordinasi tim dilakukan minimal 1 kali per minggu secara online atau offline.</li>
+                            <li>Setiap departemen wajib membuat laporan progress mingguan.</li>
+                            <li>Komunikasi urgent dilakukan melalui platform chat grup yang telah disepakati.</li>
+                            <li>Setiap keputusan penting harus didokumentasikan dan dikomunikasikan kepada seluruh anggota tim.</li>
+                        </ul>
+                    </div>
 
-            <section>
-                <h2>Revisi & Pembaruan Kebijakan</h2>
-                <p>Kebijakan ini dapat direvisi dan diperbarui sesuai dengan kebutuhan proyek dan kesepakatan seluruh anggota tim. Setiap perubahan kebijakan harus dikomunikasikan dan didokumentasikan dengan baik.</p>
+                    <div class="policy-card">
+                        <h3>6. Kebijakan Kemitraan dengan Masyarakat</h3>
+                        <ul>
+                            <li>Melibatkan Kelompok Tani Desa dalam setiap tahap pelaksanaan proyek.</li>
+                            <li>Menghormati budaya lokal dan kearifan lokal dalam implementasi teknologi.</li>
+                            <li>Memberikan workshop dan pelatihan gratis kepada petani mitra.</li>
+                            <li>Membangun hubungan yang berkelanjutan dengan masyarakat desa.</li>
+                        </ul>
+                    </div>
+                </section>
 
-                <div class="highlight">
-                    <p><strong>Catatan:</strong> Kebijakan ini berlaku sejak dimulainya proyek dan mengikat seluruh anggota Tim Myco-Tech dari HIMAIF dan HIMALOGI.</p>
-                </div>
-            </section>
-        </main>
+                <section id="sustainability">
+                    <h2>Kebijakan Sustainability & Lingkungan</h2>
 
-        <footer>
-            <p>© 2026 Myco-Tech Project - HIMAIF × HIMALOGI | Universitas Wanita Internasional</p>
-        </footer>
+                    <div class="policy-card">
+                        <h3>7. Kebijakan Ramah Lingkungan</h3>
+                        <ul>
+                            <li>Menggunakan energi terbarukan (panel surya) sebagai sumber energi utama.</li>
+                            <li>Meminimalkan penggunaan bahan kimia dalam proses budidaya jamur.</li>
+                            <li>Pengelolaan limbah organik menjadi kompos atau media tanam.</li>
+                            <li>Mendorong praktik pertanian berkelanjutan.</li>
+                        </ul>
+                    </div>
+
+                    <div class="policy-card">
+                        <h3>8. Kebijakan Keberlanjutan Proyek</h3>
+                        <ul>
+                            <li>Memberikan pelatihan intensif kepada petani agar dapat mengelola sistem secara mandiri setelah proyek berakhir.</li>
+                            <li>Menyusun panduan dan SOP yang mudah dipahami untuk maintenance sistem.</li>
+                            <li>Membangun kapasitas lokal untuk troubleshooting masalah teknis sederhana.</li>
+                            <li>Mendorong replikasi proyek ke desa-desa lain di sekitar wilayah.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="etika">
+                    <h2>Kebijakan Etika & Integritas</h2>
+
+                    <div class="important">
+                        <h3>9. Kode Etik Tim</h3>
+                        <ul>
+                            <li><strong>Integritas:</strong> Setiap anggota tim harus menjunjung tinggi kejujuran dan transparansi dalam setiap tindakan.</li>
+                            <li><strong>Profesionalisme:</strong> Menjalankan tugas dengan penuh tanggung jawab dan komitmen tinggi.</li>
+                            <li><strong>Kolaborasi:</strong> Menghargai kontribusi setiap anggota tim dan bekerja sama dengan baik.</li>
+                            <li><strong>Inovasi:</strong> Mendorong kreativitas dan solusi inovatif dalam menghadapi tantangan.</li>
+                            <li><strong>Kepedulian Sosial:</strong> Menempatkan kepentingan masyarakat sebagai prioritas utama.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="revisi">
+                    <h2>Revisi & Pembaruan Kebijakan</h2>
+                    <p>Kebijakan ini dapat direvisi dan diperbarui sesuai dengan kebutuhan proyek dan kesepakatan seluruh anggota tim. Setiap perubahan kebijakan harus dikomunikasikan dan didokumentasikan dengan baik.</p>
+
+                    <div class="highlight">
+                        <p><strong>Catatan:</strong> Kebijakan ini berlaku sejak dimulainya proyek dan mengikat seluruh anggota Tim Myco-Tech dari HIMAIF dan HIMALOGI.</p>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <p>© 2026 Myco-Tech Project - HIMAIF × HIMALOGI | Universitas Wanita Internasional</p>
+            </footer>
+        </div>
     </div>
+
+    <script src="sidebar.js"></script>
 </body>
 </html>

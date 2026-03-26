@@ -11,6 +11,7 @@
     --color-fg-subtle: #6e7781;
     --color-accent-fg: #0969da;
     --color-accent-emphasis: #0969da;
+    --color-accent-subtle-bg: #ddf4ff;
     --color-success-fg: #1a7f37;
     --color-attention-fg: #9a6700;
     --color-danger-fg: #cf222e;
@@ -179,7 +180,7 @@ strong {
     font-weight: 600;
     line-height: 1;
     color: var(--color-accent-fg);
-    background-color: #ddf4ff;
+    background-color: var(--color-accent-subtle-bg);
     border: 1px solid rgba(9, 105, 218, 0.4);
     border-radius: 12px;
     margin-right: 6px;
@@ -217,7 +218,7 @@ strong {
 }
 
 .info {
-    background-color: #ddf4ff;
+    background-color: var(--color-accent-subtle-bg);
     padding: 16px;
     border-left: 4px solid var(--color-accent-fg);
     border-radius: 6px;
@@ -321,7 +322,7 @@ table tr:nth-child(even) {
 }
 
 .responsibilities {
-    background-color: #ddf4ff;
+    background-color: var(--color-accent-subtle-bg);
     padding: 16px;
     border-radius: 6px;
     margin-top: 16px;
@@ -410,5 +411,255 @@ footer {
     .logo-container {
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+
+/* ====================================================
+   Sidebar Documentation Layout
+   Used by all non-index pages
+   ==================================================== */
+
+body.docs-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Sticky top header bar */
+.docs-top-header {
+    background-color: var(--color-canvas-default);
+    border-bottom: 1px solid var(--color-border-muted);
+    padding: 10px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 60px;
+    box-sizing: border-box;
+    box-shadow: var(--color-shadow-small);
+}
+
+.docs-top-header .logo-container {
+    padding: 0;
+    gap: 8px;
+}
+
+.docs-top-header .logo-badge {
+    width: 32px;
+    height: 32px;
+}
+
+.docs-site-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-fg-default);
+    margin: 0;
+    white-space: nowrap;
+    letter-spacing: -0.01em;
+}
+
+.docs-site-title span {
+    color: var(--color-accent-fg);
+}
+
+.sidebar-toggle-btn {
+    display: none;
+    margin-left: auto;
+    padding: 6px 10px;
+    background: var(--color-canvas-subtle);
+    border: 1px solid var(--color-border-muted);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+    color: var(--color-fg-default);
+    transition: background-color 0.15s ease;
+}
+
+.sidebar-toggle-btn:hover {
+    background-color: var(--color-border-muted);
+}
+
+/* Outer wrapper for sidebar + content */
+.docs-wrapper {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+/* Left sidebar */
+.docs-sidebar {
+    width: 260px;
+    flex-shrink: 0;
+    border-right: 1px solid var(--color-border-muted);
+    padding: 20px 0 32px;
+    position: sticky;
+    top: 60px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    background-color: var(--color-canvas-default);
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-border-muted) transparent;
+}
+
+.docs-sidebar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.docs-sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.docs-sidebar::-webkit-scrollbar-thumb {
+    background-color: var(--color-border-muted);
+    border-radius: 4px;
+}
+
+.sidebar-nav {
+    padding: 0 12px;
+}
+
+.sidebar-nav-section {
+    margin-bottom: 20px;
+}
+
+.sidebar-nav-section-title {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-fg-subtle);
+    padding: 4px 8px;
+    margin-bottom: 4px;
+}
+
+.sidebar-nav-link {
+    display: block;
+    padding: 6px 8px;
+    border-radius: 6px;
+    color: var(--color-fg-default);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.5;
+    transition: background-color 0.15s ease, color 0.15s ease;
+    margin-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar-nav-link:hover {
+    background-color: var(--color-canvas-subtle);
+    color: var(--color-accent-fg);
+}
+
+.sidebar-nav-link.active {
+    background-color: var(--color-accent-subtle-bg);
+    color: var(--color-accent-fg);
+    font-weight: 600;
+}
+
+.sidebar-nav-link.section-link {
+    font-size: 13px;
+    color: var(--color-fg-muted);
+    padding-left: 20px;
+    white-space: normal;
+    line-height: 1.4;
+    border-left: 2px solid transparent;
+    border-radius: 0 6px 6px 0;
+    padding-right: 8px;
+}
+
+.sidebar-nav-link.section-link:hover {
+    color: var(--color-accent-fg);
+    border-left-color: var(--color-accent-fg);
+    background-color: var(--color-canvas-subtle);
+}
+
+.sidebar-divider {
+    border: none;
+    border-top: 1px solid var(--color-border-muted);
+    margin: 8px 8px 16px;
+}
+
+/* Right content area */
+.docs-main {
+    flex: 1;
+    min-width: 0;
+    padding: 40px 48px;
+    max-width: 900px;
+}
+
+.docs-main > header {
+    border-bottom: 1px solid var(--color-border-muted);
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+}
+
+.docs-main > footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--color-border-muted);
+    color: var(--color-fg-muted);
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Sidebar overlay backdrop (mobile) */
+.sidebar-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 150;
+}
+
+.sidebar-backdrop.active {
+    display: block;
+}
+
+/* Responsive for sidebar layout */
+@media (max-width: 900px) {
+    .docs-sidebar {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 280px;
+        z-index: 200;
+        box-shadow: var(--color-shadow-large);
+        padding-top: 70px;
+    }
+
+    .docs-sidebar.sidebar-open {
+        display: block;
+    }
+
+    .sidebar-toggle-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .docs-main {
+        padding: 24px 20px;
+    }
+
+    .docs-site-title {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .docs-main {
+        padding: 20px 16px;
+    }
+
+    .docs-top-header {
+        padding: 10px 16px;
     }
 }

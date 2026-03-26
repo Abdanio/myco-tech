@@ -48,33 +48,77 @@
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <div class="logo-container">
-                <img src="https://github.com/user-attachments/assets/9de145b4-b16b-4ec4-9e88-2803e3b518d2" alt="HIMAIF Logo" class="logo-badge">
-                <img src="https://github.com/user-attachments/assets/6850b4f9-d61d-4342-aac4-dbf854c01710" alt="Myco-Tech Logo" class="logo-badge">
-                <img src="https://github.com/user-attachments/assets/629c12f6-d21f-46af-bb81-4cb589981cd7" alt="HIMALOGI Logo" class="logo-badge">
-            </div>
-            <div class="nav">
-                <a href="index.html">← Kembali ke Beranda</a>
-                <a href="tupoksi.html">Tupoksi</a>
-                <a href="profile-tim.html">Profil Tim</a>
-                <a href="kebijakan.html">Kebijakan</a>
-                <a href="ketentuan.html">Ketentuan</a>
-            </div>
-            <h1>Dokumentasi Sistem Monitoring Biologis & IoT</h1>
-            <p>Panduan lengkap parameter monitoring untuk budidaya jamur berbasis teknologi</p>
-        </header>
+<body class="docs-page">
 
-        <main>
-            <section>
-                <h2>Overview Sistem Monitoring</h2>
+    <!-- Sticky top header -->
+    <header class="docs-top-header">
+        <div class="logo-container">
+            <img src="https://github.com/user-attachments/assets/9de145b4-b16b-4ec4-9e88-2803e3b518d2" alt="HIMAIF Logo" class="logo-badge">
+            <img src="https://github.com/user-attachments/assets/6850b4f9-d61d-4342-aac4-dbf854c01710" alt="Myco-Tech Logo" class="logo-badge">
+            <img src="https://github.com/user-attachments/assets/629c12f6-d21f-46af-bb81-4cb589981cd7" alt="HIMALOGI Logo" class="logo-badge">
+        </div>
+        <span class="docs-site-title">Myco-<span>Tech</span></span>
+        <button class="sidebar-toggle-btn" onclick="toggleSidebar()" aria-label="Toggle sidebar">☰</button>
+    </header>
+
+    <div id="sidebar-backdrop" class="sidebar-backdrop" onclick="closeSidebar()"></div>
+
+    <div class="docs-wrapper">
+
+        <!-- Left sidebar -->
+        <aside class="docs-sidebar" id="docs-sidebar">
+            <nav class="sidebar-nav" aria-label="Sidebar navigation">
+
+                <div class="sidebar-nav-section">
+                    <span class="sidebar-nav-section-title">Halaman</span>
+                    <a href="index.html" class="sidebar-nav-link">🏠 Beranda</a>
+                    <a href="tupoksi.html" class="sidebar-nav-link">📋 Tupoksi</a>
+                    <a href="profile-tim.html" class="sidebar-nav-link">👥 Profil Tim</a>
+                    <a href="dokumentasi.html" class="sidebar-nav-link active">📚 Dokumentasi</a>
+                    <a href="kebijakan.html" class="sidebar-nav-link">📜 Kebijakan</a>
+                    <a href="ketentuan.html" class="sidebar-nav-link">⚖️ Ketentuan</a>
+                </div>
+
+                <hr class="sidebar-divider">
+
+                <div class="sidebar-nav-section">
+                    <span class="sidebar-nav-section-title">Di Halaman Ini</span>
+                    <a href="#overview" class="sidebar-nav-link section-link">Overview Sistem</a>
+                    <a href="#topic-1" class="sidebar-nav-link section-link">1. Suhu (Temperature)</a>
+                    <a href="#topic-2" class="sidebar-nav-link section-link">2. Kelembapan (Humidity)</a>
+                    <a href="#topic-3" class="sidebar-nav-link section-link">3. Karbon Dioksida (CO₂)</a>
+                    <a href="#topic-4" class="sidebar-nav-link section-link">4. Cahaya (Light)</a>
+                    <a href="#topic-5" class="sidebar-nav-link section-link">5. pH (Keasaman)</a>
+                    <a href="#topic-6" class="sidebar-nav-link section-link">6. Kadar Air</a>
+                    <a href="#topic-7" class="sidebar-nav-link section-link">7. Pertumbuhan Jamur</a>
+                    <a href="#topic-8" class="sidebar-nav-link section-link">8. Integrasi Data ke IoT</a>
+                    <a href="#topic-9" class="sidebar-nav-link section-link">9. Diagram Alur Sistem</a>
+                    <a href="#topic-10" class="sidebar-nav-link section-link">10. Aktivitas Metabolisme</a>
+                    <a href="#topic-11" class="sidebar-nav-link section-link">11. Tingkat Kontaminasi</a>
+                    <a href="#topic-12" class="sidebar-nav-link section-link">12. Nutrisi Jamur</a>
+                    <a href="#topic-13" class="sidebar-nav-link section-link">13. Fase Pertumbuhan</a>
+                    <a href="#topic-14" class="sidebar-nav-link section-link">14. Respon Biologis</a>
+                    <a href="#catatan" class="sidebar-nav-link section-link">Catatan Penting</a>
+                </div>
+
+            </nav>
+        </aside>
+
+        <!-- Main content -->
+        <div class="docs-main">
+            <header>
+                <h1>Dokumentasi Sistem Monitoring Biologis & IoT</h1>
+                <p>Panduan lengkap parameter monitoring untuk budidaya jamur berbasis teknologi</p>
+            </header>
+
+            <main>
+                <section id="overview">
+                    <h2>Overview Sistem Monitoring</h2>
                 <p>Sistem monitoring Myco-Tech mengintegrasikan 14 parameter biologis dan lingkungan yang krusial untuk optimalisasi budidaya jamur tiram. Setiap parameter dipantau secara real-time menggunakan teknologi IoT untuk memastikan kondisi pertumbuhan yang optimal.</p>
             </section>
 
-            <!-- Topic 1: Suhu -->
-            <div class="topic-card">
+            <!-- Topic 1 -->
+            <div id="topic-1" class="topic-card">
                 <h3>1. Suhu (Temperature)</h3>
 
                 <div class="topic-section">
@@ -136,8 +180,8 @@
                 </div>
             </div>
 
-            <!-- Topic 2: Kelembapan -->
-            <div class="topic-card">
+            <!-- Topic 2 -->
+            <div id="topic-2" class="topic-card">
                 <h3>2. Kelembapan (Humidity)</h3>
 
                 <div class="topic-section">
@@ -199,8 +243,8 @@
                 </div>
             </div>
 
-            <!-- Topic 3: CO₂ -->
-            <div class="topic-card">
+            <!-- Topic 3 -->
+            <div id="topic-3" class="topic-card">
                 <h3>3. Karbon Dioksida (CO₂)</h3>
 
                 <div class="topic-section">
@@ -262,8 +306,8 @@
                 </div>
             </div>
 
-            <!-- Topic 4: Cahaya -->
-            <div class="topic-card">
+            <!-- Topic 4 -->
+            <div id="topic-4" class="topic-card">
                 <h3>4. Cahaya (Light)</h3>
 
                 <div class="topic-section">
@@ -325,8 +369,8 @@
                 </div>
             </div>
 
-            <!-- Topic 5: pH -->
-            <div class="topic-card">
+            <!-- Topic 5 -->
+            <div id="topic-5" class="topic-card">
                 <h3>5. pH (Tingkat Keasaman)</h3>
 
                 <div class="topic-section">
@@ -388,8 +432,8 @@
                 </div>
             </div>
 
-            <!-- Topic 6: Kadar Air -->
-            <div class="topic-card">
+            <!-- Topic 6 -->
+            <div id="topic-6" class="topic-card">
                 <h3>6. Kadar Air (Moisture Content)</h3>
 
                 <div class="topic-section">
@@ -451,8 +495,8 @@
                 </div>
             </div>
 
-            <!-- Topic 7: Pertumbuhan Jamur -->
-            <div class="topic-card">
+            <!-- Topic 7 -->
+            <div id="topic-7" class="topic-card">
                 <h3>7. Pertumbuhan Jamur (Mushroom Growth)</h3>
 
                 <div class="topic-section">
@@ -514,8 +558,8 @@
                 </div>
             </div>
 
-            <!-- Topic 8: Integrasi Data Biologi ke Sistem IoT -->
-            <div class="topic-card">
+            <!-- Topic 8 -->
+            <div id="topic-8" class="topic-card">
                 <h3>8. Integrasi Data Biologi ke Sistem IoT</h3>
 
                 <div class="topic-section">
@@ -579,8 +623,8 @@
                 </div>
             </div>
 
-            <!-- Topic 9: Diagram Alur Sistem -->
-            <div class="topic-card">
+            <!-- Topic 9 -->
+            <div id="topic-9" class="topic-card">
                 <h3>9. Diagram Alur Sistem (System Flow Diagram)</h3>
 
                 <div class="topic-section">
@@ -690,8 +734,8 @@
                 </div>
             </div>
 
-            <!-- Topic 10: Aktivitas Metabolisme Jamur -->
-            <div class="topic-card">
+            <!-- Topic 10 -->
+            <div id="topic-10" class="topic-card">
                 <h3>10. Aktivitas Metabolisme Jamur</h3>
 
                 <div class="topic-section">
@@ -764,8 +808,8 @@
                 </div>
             </div>
 
-            <!-- Topic 11: Tingkat Kontaminasi -->
-            <div class="topic-card">
+            <!-- Topic 11 -->
+            <div id="topic-11" class="topic-card">
                 <h3>11. Tingkat Kontaminasi (Contamination Level)</h3>
 
                 <div class="topic-section">
@@ -840,8 +884,8 @@
                 </div>
             </div>
 
-            <!-- Topic 12: Nutrisi Jamur -->
-            <div class="topic-card">
+            <!-- Topic 12 -->
+            <div id="topic-12" class="topic-card">
                 <h3>12. Nutrisi Jamur (Mushroom Nutrition)</h3>
 
                 <div class="topic-section">
@@ -917,8 +961,8 @@
                 </div>
             </div>
 
-            <!-- Topic 13: Fase Pertumbuhan -->
-            <div class="topic-card">
+            <!-- Topic 13 -->
+            <div id="topic-13" class="topic-card">
                 <h3>13. Fase Pertumbuhan (Growth Phases)</h3>
 
                 <div class="topic-section">
@@ -1011,8 +1055,8 @@
                 </div>
             </div>
 
-            <!-- Topic 14: Respon Biologis terhadap Perubahan Lingkungan -->
-            <div class="topic-card">
+            <!-- Topic 14 -->
+            <div id="topic-14" class="topic-card">
                 <h3>14. Respon Biologis terhadap Perubahan Lingkungan</h3>
 
                 <div class="topic-section">
@@ -1142,17 +1186,20 @@
                 </div>
             </div>
 
-            <section style="margin-top: 40px; padding: 24px; background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 6px;">
+            <section id="catatan" style="margin-top: 40px; padding: 24px; background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 6px;">
                 <h2 style="color: #856404; margin-top: 0;">Catatan Penting</h2>
                 <p style="color: #856404;">Dokumentasi ini merupakan living document yang akan terus diperbarui seiring dengan perkembangan penelitian dan pengalaman praktis di lapangan. Data-data yang disajikan bersumber dari literatur ilmiah dan best practices dalam industri budidaya jamur.</p>
                 <p style="color: #856404; margin-bottom: 0;">Untuk implementasi praktis, selalu konsultasikan dengan tim Bio Consultant Myco-Tech dan sesuaikan dengan kondisi spesifik di lokasi budidaya Anda.</p>
             </section>
         </main>
 
-        <footer>
-            <p>© 2026 Myco-Tech Project - HIMAIF × HIMALOGI | Universitas Wanita Internasional</p>
-            <p style="font-size: 0.9em; color: #6c757d; margin-top: 8px;">Dokumentasi Sistem Monitoring Biologis & IoT v1.0</p>
-        </footer>
+            <footer>
+                <p>© 2026 Myco-Tech Project - HIMAIF × HIMALOGI | Universitas Wanita Internasional</p>
+                <p style="font-size: 0.9em; color: #6c757d; margin-top: 8px;">Dokumentasi Sistem Monitoring Biologis & IoT v1.0</p>
+            </footer>
+        </div>
     </div>
+
+    <script src="sidebar.js"></script>
 </body>
 </html>

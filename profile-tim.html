@@ -5,178 +5,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil Tim - Myco-Tech</title>
     <link rel="stylesheet" href="github-minimal.css">
-
 </head>
-<body>
-    <div class="container">
-        <header>
-            <div class="logo-container">
-                <img src="https://github.com/user-attachments/assets/9de145b4-b16b-4ec4-9e88-2803e3b518d2" alt="HIMAIF Logo" class="logo-badge">
-                <img src="https://github.com/user-attachments/assets/6850b4f9-d61d-4342-aac4-dbf854c01710" alt="Myco-Tech Logo" class="logo-badge">
-                <img src="https://github.com/user-attachments/assets/629c12f6-d21f-46af-bb81-4cb589981cd7" alt="HIMALOGI Logo" class="logo-badge">
-            </div>
-            <div class="nav">
-                <a href="index.html">← Kembali ke Beranda</a>
-                <a href="tupoksi.html">Tupoksi</a>
-                <a href="dokumentasi.html">Dokumentasi</a>
-                <a href="kebijakan.html">Kebijakan</a>
-                <a href="ketentuan.html">Ketentuan</a>
-            </div>
-            <h1>Profil Tim</h1>
-            <p>Struktur Kepemimpinan Tim Myco-Tech</p>
-        </header>
+<body class="docs-page">
 
-        <main>
-            <div class="leadership-section">
-                <h2>Kepemimpinan Proyek Myco-Tech</h2>
-                <p>Kolaborasi strategis antara HIMAIF dan HIMALOGI untuk transformasi budidaya jamur di Desa Cirateun Kulon melalui inovasi teknologi dan bioteknologi.</p>
-                <div class="stats">
-                    <div class="stat-item">
-                        <div class="stat-number">15+</div>
-                        <div class="stat-label">Anggota Tim</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">5</div>
-                        <div class="stat-label">Bulan</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">4</div>
-                        <div class="stat-label">Departemen</div>
-                    </div>
+    <!-- Sticky top header -->
+    <header class="docs-top-header">
+        <div class="logo-container">
+            <img src="https://github.com/user-attachments/assets/9de145b4-b16b-4ec4-9e88-2803e3b518d2" alt="HIMAIF Logo" class="logo-badge">
+            <img src="https://github.com/user-attachments/assets/6850b4f9-d61d-4342-aac4-dbf854c01710" alt="Myco-Tech Logo" class="logo-badge">
+            <img src="https://github.com/user-attachments/assets/629c12f6-d21f-46af-bb81-4cb589981cd7" alt="HIMALOGI Logo" class="logo-badge">
+        </div>
+        <span class="docs-site-title">Myco-<span>Tech</span></span>
+        <button class="sidebar-toggle-btn" onclick="toggleSidebar()" aria-label="Toggle sidebar">☰</button>
+    </header>
+
+    <div id="sidebar-backdrop" class="sidebar-backdrop" onclick="closeSidebar()"></div>
+
+    <div class="docs-wrapper">
+
+        <!-- Left sidebar -->
+        <aside class="docs-sidebar" id="docs-sidebar">
+            <nav class="sidebar-nav" aria-label="Sidebar navigation">
+
+                <div class="sidebar-nav-section">
+                    <span class="sidebar-nav-section-title">Halaman</span>
+                    <a href="index.html" class="sidebar-nav-link">🏠 Beranda</a>
+                    <a href="tupoksi.html" class="sidebar-nav-link">📋 Tupoksi</a>
+                    <a href="profile-tim.html" class="sidebar-nav-link active">👥 Profil Tim</a>
+                    <a href="dokumentasi.html" class="sidebar-nav-link">📚 Dokumentasi</a>
+                    <a href="kebijakan.html" class="sidebar-nav-link">📜 Kebijakan</a>
+                    <a href="ketentuan.html" class="sidebar-nav-link">⚖️ Ketentuan</a>
                 </div>
-            </div>
 
-            <section>
-                <h2>Ketua Tim Proyek</h2>
+                <hr class="sidebar-divider">
 
-                <div class="profile-card">
-                    <div class="profile-header">
-                        <img src="https://github.com/user-attachments/assets/6836d014-9da5-4172-ab74-a7b39b25fce8" alt="Sinsin Makiyah Musaropah" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
-                        <div class="profile-info">
-                            <h3 class="profile-name">Sinsin Makiyah Musaropah</h3>
-                            <div class="profile-role">Ketua Tim</div>
-                            <span class="profile-org org-himaif">HIMAIF</span>
-                            <span class="profile-org org-himalogi">HIMALOGI</span>
-                            <div class="contact-info">
-                                📧 sinsinmakiyah26@gmail.com | 📱 083175570595
-                            </div>
+                <div class="sidebar-nav-section">
+                    <span class="sidebar-nav-section-title">Di Halaman Ini</span>
+                    <a href="#kepemimpinan" class="sidebar-nav-link section-link">Kepemimpinan Proyek</a>
+                    <a href="#ketua" class="sidebar-nav-link section-link">Ketua Tim Proyek</a>
+                    <a href="#pimpinan" class="sidebar-nav-link section-link">Pimpinan Organisasi</a>
+                    <a href="#struktur" class="sidebar-nav-link section-link">Struktur Tim Lengkap</a>
+                    <a href="#kolaborasi" class="sidebar-nav-link section-link">Kolaborasi HIMAIF × HIMALOGI</a>
+                </div>
+
+            </nav>
+        </aside>
+
+        <!-- Main content -->
+        <div class="docs-main">
+            <header>
+                <h1>Profil Tim</h1>
+                <p>Struktur Kepemimpinan Tim Myco-Tech</p>
+            </header>
+
+            <main>
+                <div id="kepemimpinan" class="leadership-section">
+                    <h2>Kepemimpinan Proyek Myco-Tech</h2>
+                    <p>Kolaborasi strategis antara HIMAIF dan HIMALOGI untuk transformasi budidaya jamur di Desa Cirateun Kulon melalui inovasi teknologi dan bioteknologi.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Anggota Tim</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Bulan</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">4</div>
+                            <div class="stat-label">Departemen</div>
                         </div>
                     </div>
-                    <div class="profile-description">
-                        <p>Sinsin Makiyah Musaropah adalah Ketua Tim Myco-Tech yang bertanggung jawab atas keseluruhan koordinasi, perencanaan strategis, dan memastikan sinergi antar departemen berjalan dengan baik.</p>
-                    </div>
-                    <div class="responsibilities">
-                        <strong>Tanggung Jawab Utama:</strong>
-                        <ul>
-                            <li>Mengkoordinasi seluruh aktivitas tim dan memastikan timeline proyek terpenuhi</li>
-                            <li>Mengelola komunikasi dengan stakeholder eksternal dan kelompok tani</li>
-                            <li>Mengatur administrasi keuangan dan pelaporan progress proyek</li>
-                            <li>Memimpin rapat koordinasi mingguan dan evaluasi berkala</li>
-                            <li>Mengambil keputusan strategis terkait arah dan kebijakan proyek</li>
-                            <li>Menyelesaikan konflik dan masalah yang muncul selama pelaksanaan</li>
-                        </ul>
-                    </div>
                 </div>
-            </section>
 
-            <section>
-                <h2>Pimpinan Organisasi</h2>
+                <section id="ketua">
+                    <h2>Ketua Tim Proyek</h2>
 
-                <div class="profile-card">
-                    <div class="profile-header">
-                        <img src="https://github.com/user-attachments/assets/b5ed6689-bfdc-402b-a654-98455741e9d1" alt="Okta Ramdani" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
-                        <div class="profile-info">
-                            <h3 class="profile-name">Okta Ramdani</h3>
-                            <div class="profile-role">Ketua HIMAIF</div>
-                            <span class="profile-org org-himaif">HIMAIF</span>
-                            <div class="contact-info">
-                                📧 okta.105240041@iwu.ac.id | 📱 083821728652
+                    <div class="profile-card">
+                        <div class="profile-header">
+                            <img src="https://github.com/user-attachments/assets/6836d014-9da5-4172-ab74-a7b39b25fce8" alt="Sinsin Makiyah Musaropah" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
+                            <div class="profile-info">
+                                <h3 class="profile-name">Sinsin Makiyah Musaropah</h3>
+                                <div class="profile-role">Ketua Tim</div>
+                                <span class="profile-org org-himaif">HIMAIF</span>
+                                <span class="profile-org org-himalogi">HIMALOGI</span>
+                                <div class="contact-info">
+                                    📧 sinsinmakiyah26@gmail.com | 📱 083175570595
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="profile-description">
-                        <p>Okta Ramdani adalah Ketua Himpunan Mahasiswa Informatika (HIMAIF) yang membawa perspektif teknologi digital dan software development ke dalam proyek. Dengan keahlian di bidang digital intelligence dan cloud computing, ia memimpin aspek teknologi digital proyek Myco-Tech.</p>
-                    </div>
-                    <div class="responsibilities">
-                        <strong>Tanggung Jawab Utama:</strong>
-                        <ul>
-                            <li>Memimpin Departemen Digital Intelligence & UX dalam pengembangan dashboard cloud</li>
-                            <li>Mengkoordinasi anggota HIMAIF yang terlibat dalam proyek</li>
-                            <li>Memastikan implementasi teknologi IoT dan sistem monitoring berjalan optimal</li>
-                            <li>Mengelola strategi branding digital dan publikasi media sosial</li>
-                            <li>Membangun kerjasama dengan organisasi lain untuk ekspansi proyek</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="profile-card">
-                    <div class="profile-header">
-                        <img src="https://github.com/user-attachments/assets/b0751b98-742d-423c-bf11-47339a857dba" alt="Marsha Putri Komara" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
-                        <div class="profile-info">
-                            <h3 class="profile-name">Marsha Putri Komara</h3>
-                            <div class="profile-role">Ketua HIMALOGI</div>
-                            <span class="profile-org org-himalogi">HIMALOGI</span>
-                            <div class="contact-info">
-                                📧 ihapaaja15@gmail.com | 📱 083832533215
-                            </div>
+                        <div class="profile-description">
+                            <p>Sinsin Makiyah Musaropah adalah Ketua Tim Myco-Tech yang bertanggung jawab atas keseluruhan koordinasi, perencanaan strategis, dan memastikan sinergi antar departemen berjalan dengan baik.</p>
+                        </div>
+                        <div class="responsibilities">
+                            <strong>Tanggung Jawab Utama:</strong>
+                            <ul>
+                                <li>Mengkoordinasi seluruh aktivitas tim dan memastikan timeline proyek terpenuhi</li>
+                                <li>Mengelola komunikasi dengan stakeholder eksternal dan kelompok tani</li>
+                                <li>Mengatur administrasi keuangan dan pelaporan progress proyek</li>
+                                <li>Memimpin rapat koordinasi mingguan dan evaluasi berkala</li>
+                                <li>Mengambil keputusan strategis terkait arah dan kebijakan proyek</li>
+                                <li>Menyelesaikan konflik dan masalah yang muncul selama pelaksanaan</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="profile-description">
-                        <p>Marsha Putri Komara adalah Ketua Himpunan Mahasiswa Biologi (HIMALOGI) dengan spesialisasi dalam mikologi (ilmu jamur) dan bioteknologi. Sebagai pemimpin HIMALOGI, ia bertanggung jawab atas aspek biologi dan kloning jaringan dalam proyek ini, memastikan penerapan prinsip-prinsip biologi yang tepat.</p>
+                </section>
+
+                <section id="pimpinan">
+                    <h2>Pimpinan Organisasi</h2>
+
+                    <div class="profile-card">
+                        <div class="profile-header">
+                            <img src="https://github.com/user-attachments/assets/b5ed6689-bfdc-402b-a654-98455741e9d1" alt="Okta Ramdani" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
+                            <div class="profile-info">
+                                <h3 class="profile-name">Okta Ramdani</h3>
+                                <div class="profile-role">Ketua HIMAIF</div>
+                                <span class="profile-org org-himaif">HIMAIF</span>
+                                <div class="contact-info">
+                                    📧 okta.105240041@iwu.ac.id | 📱 083821728652
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-description">
+                            <p>Okta Ramdani adalah Ketua Himpunan Mahasiswa Informatika (HIMAIF) yang membawa perspektif teknologi digital dan software development ke dalam proyek. Dengan keahlian di bidang digital intelligence dan cloud computing, ia memimpin aspek teknologi digital proyek Myco-Tech.</p>
+                        </div>
+                        <div class="responsibilities">
+                            <strong>Tanggung Jawab Utama:</strong>
+                            <ul>
+                                <li>Memimpin Departemen Digital Intelligence & UX dalam pengembangan dashboard cloud</li>
+                                <li>Mengkoordinasi anggota HIMAIF yang terlibat dalam proyek</li>
+                                <li>Memastikan implementasi teknologi IoT dan sistem monitoring berjalan optimal</li>
+                                <li>Mengelola strategi branding digital dan publikasi media sosial</li>
+                                <li>Membangun kerjasama dengan organisasi lain untuk ekspansi proyek</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="responsibilities">
-                        <strong>Tanggung Jawab Utama:</strong>
-                        <ul>
-                            <li>Memimpin Departemen Bio Consultant dan mengawasi teknik kloning jaringan</li>
-                            <li>Mengkoordinasi anggota HIMALOGI dalam aspek biologi proyek</li>
-                            <li>Menyusun dan mengimplementasikan SOP sterilisasi dan perawatan baglog</li>
-                            <li>Menjadi narasumber utama dalam workshop edukasi biologi jamur</li>
-                            <li>Melakukan quality control terhadap bibit F0-F2 yang diproduksi</li>
-                            <li>Berkolaborasi dengan departemen lain untuk integrasi sistem cyber-physical</li>
-                        </ul>
+
+                    <div class="profile-card">
+                        <div class="profile-header">
+                            <img src="https://github.com/user-attachments/assets/b0751b98-742d-423c-bf11-47339a857dba" alt="Marsha Putri Komara" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
+                            <div class="profile-info">
+                                <h3 class="profile-name">Marsha Putri Komara</h3>
+                                <div class="profile-role">Ketua HIMALOGI</div>
+                                <span class="profile-org org-himalogi">HIMALOGI</span>
+                                <div class="contact-info">
+                                    📧 ihapaaja15@gmail.com | 📱 083832533215
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-description">
+                            <p>Marsha Putri Komara adalah Ketua Himpunan Mahasiswa Biologi (HIMALOGI) dengan spesialisasi dalam mikologi (ilmu jamur) dan bioteknologi. Sebagai pemimpin HIMALOGI, ia bertanggung jawab atas aspek biologi dan kloning jaringan dalam proyek ini, memastikan penerapan prinsip-prinsip biologi yang tepat.</p>
+                        </div>
+                        <div class="responsibilities">
+                            <strong>Tanggung Jawab Utama:</strong>
+                            <ul>
+                                <li>Memimpin Departemen Bio Consultant dan mengawasi teknik kloning jaringan</li>
+                                <li>Mengkoordinasi anggota HIMALOGI dalam aspek biologi proyek</li>
+                                <li>Menyusun dan mengimplementasikan SOP sterilisasi dan perawatan baglog</li>
+                                <li>Menjadi narasumber utama dalam workshop edukasi biologi jamur</li>
+                                <li>Melakukan quality control terhadap bibit F0-F2 yang diproduksi</li>
+                                <li>Berkolaborasi dengan departemen lain untuk integrasi sistem cyber-physical</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section>
-                <h2>Struktur Tim Lengkap</h2>
-                <p>Selain kepemimpinan di atas, Tim Myco-Tech didukung oleh anggota-anggota berkompeten dari berbagai departemen:</p>
+                <section id="struktur">
+                    <h2>Struktur Tim Lengkap</h2>
+                    <p>Selain kepemimpinan di atas, Tim Myco-Tech didukung oleh anggota-anggota berkompeten dari berbagai departemen:</p>
 
-                <div class="profile-card" style="background-color: #f6f8fa;">
-                    <h3>Departemen Bio Consultant (HIMALOGI)</h3>
-                    <p><strong>Anggota:</strong> Marsha, Bagja, Triana, Rafly (4 orang)</p>
-                    <p>Tim yang fokus pada aspek biologi, kloning jaringan, dan pengembangan bibit unggul.</p>
-                </div>
+                    <div class="profile-card" style="background-color: #f6f8fa;">
+                        <h3>Departemen Bio Consultant (HIMALOGI)</h3>
+                        <p><strong>Anggota:</strong> Marsha, Bagja, Triana, Rafly (4 orang)</p>
+                        <p>Tim yang fokus pada aspek biologi, kloning jaringan, dan pengembangan bibit unggul.</p>
+                    </div>
 
-                <div class="profile-card" style="background-color: #f6f8fa;">
-                    <h3>Departemen Hardware & Field Engineering (HIMAIF & HIMALOGI)</h3>
-                    <p><strong>Anggota:</strong> Okta, Wandi, Sinsin, Tia</p>
-                    <p>Tim yang bertanggung jawab atas perakitan IoT, instalasi panel surya, dan maintenance perangkat lapangan.</p>
-                </div>
+                    <div class="profile-card" style="background-color: #f6f8fa;">
+                        <h3>Departemen Hardware & Field Engineering (HIMAIF & HIMALOGI)</h3>
+                        <p><strong>Anggota:</strong> Okta, Wandi, Sinsin, Tia</p>
+                        <p>Tim yang bertanggung jawab atas perakitan IoT, instalasi panel surya, dan maintenance perangkat lapangan.</p>
+                    </div>
 
-                <div class="profile-card" style="background-color: #f6f8fa;">
-                    <h3>Departemen Digital Intelligence & UX (HIMAIF)</h3>
-                    <p><strong>Anggota:</strong> Ryan, Ervan, Dita, Mya</p>
-                    <p>Tim yang mengembangkan dashboard cloud, UI/UX aplikasi, dan sistem Early Warning System.</p>
-                </div>
+                    <div class="profile-card" style="background-color: #f6f8fa;">
+                        <h3>Departemen Digital Intelligence & UX (HIMAIF)</h3>
+                        <p><strong>Anggota:</strong> Ryan, Ervan, Dita, Mya</p>
+                        <p>Tim yang mengembangkan dashboard cloud, UI/UX aplikasi, dan sistem Early Warning System.</p>
+                    </div>
 
-                <div class="profile-card" style="background-color: #f6f8fa;">
-                    <h3>Departemen Project Management & Liaison</h3>
-                    <p><strong>Lead:</strong> Sinsin & Tim</p>
-                    <p>Tim yang mengelola administrasi, branding, publikasi, dan koordinasi dengan mitra eksternal.</p>
-                </div>
-            </section>
+                    <div class="profile-card" style="background-color: #f6f8fa;">
+                        <h3>Departemen Project Management & Liaison</h3>
+                        <p><strong>Lead:</strong> Sinsin & Tim</p>
+                        <p>Tim yang mengelola administrasi, branding, publikasi, dan koordinasi dengan mitra eksternal.</p>
+                    </div>
+                </section>
 
-            <section>
-                <h2>Kolaborasi HIMAIF × HIMALOGI</h2>
-                <p>Proyek Myco-Tech merupakan contoh nyata kolaborasi lintas disiplin ilmu yang sukses. HIMAIF membawa keahlian teknologi informasi, IoT, dan digital systems, sementara HIMALOGI berkontribusi dengan expertise dalam biologi, mikologi, dan bioteknologi.</p>
-                <p>Sinergi kedua organisasi ini menciptakan solusi inovatif yang menggabungkan <em>cyber-physical systems</em> untuk transformasi pertanian modern yang sustainable dan profitable.</p>
-            </section>
-        </main>
+                <section id="kolaborasi">
+                    <h2>Kolaborasi HIMAIF × HIMALOGI</h2>
+                    <p>Proyek Myco-Tech merupakan contoh nyata kolaborasi lintas disiplin ilmu yang sukses. HIMAIF membawa keahlian teknologi informasi, IoT, dan digital systems, sementara HIMALOGI berkontribusi dengan expertise dalam biologi, mikologi, dan bioteknologi.</p>
+                    <p>Sinergi kedua organisasi ini menciptakan solusi inovatif yang menggabungkan <em>cyber-physical systems</em> untuk transformasi pertanian modern yang sustainable dan profitable.</p>
+                </section>
+            </main>
 
-        <footer>
-            <p>© 2026 Myco-Tech Project - HIMAIF × HIMALOGI | Universitas Wanita Internasional</p>
-        </footer>
+            <footer>
+                <p>© 2026 Myco-Tech Project - HIMAIF × HIMALOGI | Universitas Wanita Internasional</p>
+            </footer>
+        </div>
     </div>
+
+    <script src="sidebar.js"></script>
 </body>
 </html>
