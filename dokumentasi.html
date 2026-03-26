@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentasi Sistem Monitoring - Myco-Tech</title>
+    <link rel="stylesheet" href="github-minimal.css">
+    <style>
+        .topic-card {
+            background: #f6f8fa;
+            border: 1px solid #d0d7de;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+        .topic-card h3 {
+            color: #0969da;
+            margin-top: 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #0969da;
+        }
+        .topic-section {
+            margin: 16px 0;
+        }
+        .topic-section h4 {
+            color: #1f2328;
+            font-size: 1.1em;
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+        .advantages-list, .disadvantages-list {
+            margin: 8px 0;
+        }
+        .advantages-list li::marker {
+            content: "✓ ";
+            color: #1a7f37;
+        }
+        .disadvantages-list li::marker {
+            content: "✗ ";
+            color: #cf222e;
+        }
+        .diagram-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="https://github.com/user-attachments/assets/9de145b4-b16b-4ec4-9e88-2803e3b518d2" alt="HIMAIF Logo" class="logo-badge">
+                <img src="https://github.com/user-attachments/assets/6850b4f9-d61d-4342-aac4-dbf854c01710" alt="Myco-Tech Logo" class="logo-badge">
+                <img src="https://github.com/user-attachments/assets/629c12f6-d21f-46af-bb81-4cb589981cd7" alt="HIMALOGI Logo" class="logo-badge">
+            </div>
+            <div class="nav">
+                <a href="index.html">← Kembali ke Beranda</a>
+                <a href="tupoksi.html">Tupoksi</a>
+                <a href="profile-tim.html">Profil Tim</a>
+                <a href="kebijakan.html">Kebijakan</a>
+                <a href="ketentuan.html">Ketentuan</a>
+            </div>
+            <h1>Dokumentasi Sistem Monitoring Biologis & IoT</h1>
+            <p>Panduan lengkap parameter monitoring untuk budidaya jamur berbasis teknologi</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Overview Sistem Monitoring</h2>
+                <p>Sistem monitoring Myco-Tech mengintegrasikan 14 parameter biologis dan lingkungan yang krusial untuk optimalisasi budidaya jamur tiram. Setiap parameter dipantau secara real-time menggunakan teknologi IoT untuk memastikan kondisi pertumbuhan yang optimal.</p>
+            </section>
+
+            <!-- Topic 1: Suhu -->
+            <div class="topic-card">
+                <h3>1. Suhu (Temperature)</h3>
+
+                <div class="topic-section">
+                    <h4>Definisi</h4>
+                    <p>Suhu adalah parameter termodinamik yang mengukur tingkat energi kinetik rata-rata molekul dalam suatu sistem. Dalam konteks budidaya jamur, suhu merupakan faktor lingkungan yang sangat krusial karena mempengaruhi aktivitas metabolisme jamur secara langsung.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Karakteristik dalam Budidaya Jamur</h4>
+                    <ul>
+                        <li>Suhu optimal untuk pertumbuhan miselium jamur tiram: 22-28°C</li>
+                        <li>Suhu optimal untuk pembentukan tubuh buah: 16-24°C</li>
+                        <li>Suhu mempengaruhi kecepatan pertumbuhan dan kualitas jamur</li>
+                        <li>Fluktuasi suhu yang drastis dapat menyebabkan stres pada jamur</li>
+                        <li>Suhu berinteraksi dengan kelembapan relatif dalam menentukan kondisi mikroklimat</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Fungsi Monitoring Suhu</h4>
+                    <ul>
+                        <li>Mengoptimalkan kecepatan pertumbuhan miselium dan tubuh buah</li>
+                        <li>Mencegah kondisi stres yang dapat menurunkan produktivitas</li>
+                        <li>Mendeteksi kondisi yang kondusif bagi kontaminasi patogen</li>
+                        <li>Memicu fase reproduktif (pinning) melalui manipulasi suhu</li>
+                        <li>Menjaga konsistensi kualitas produk jamur</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kelebihan Monitoring Suhu Real-Time</h4>
+                    <ul class="advantages-list">
+                        <li>Deteksi dini kondisi abnormal yang dapat mengganggu pertumbuhan</li>
+                        <li>Memungkinkan respons cepat untuk penyesuaian lingkungan</li>
+                        <li>Data historis untuk analisis pola dan optimalisasi</li>
+                        <li>Otomasi sistem pendingin/pemanas berdasarkan data real-time</li>
+                        <li>Peningkatan efisiensi energi melalui kontrol yang presisi</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kekurangan dan Tantangan</h4>
+                    <ul class="disadvantages-list">
+                        <li>Sensor suhu memerlukan kalibrasi berkala untuk akurasi</li>
+                        <li>Biaya investasi awal untuk sistem monitoring otomatis</li>
+                        <li>Ketergantungan pada sumber listrik yang stabil</li>
+                        <li>Kompleksitas dalam mengatur distribusi suhu yang merata di seluruh kumbung</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Manfaat untuk Petani</h4>
+                    <p>Monitoring suhu secara kontinyu memungkinkan petani untuk meningkatkan produktivitas hingga 20-30% dengan mengoptimalkan kondisi pertumbuhan, mengurangi risiko gagal panen, dan menghasilkan jamur dengan kualitas yang konsisten.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Referensi Ilmiah</h4>
+                    <p><em>Penelitian oleh Chang & Miles (2004) dalam "Mushroom Biology and Mushroom Products" menunjukkan bahwa kontrol suhu yang presisi dapat meningkatkan biological efficiency hingga 85% pada jamur tiram.</em></p>
+                </div>
+            </div>
+
+            <!-- Topic 2: Kelembapan -->
+            <div class="topic-card">
+                <h3>2. Kelembapan (Humidity)</h3>
+
+                <div class="topic-section">
+                    <h4>Definisi</h4>
+                    <p>Kelembapan relatif (RH - Relative Humidity) adalah rasio antara tekanan parsial uap air aktual di udara dengan tekanan uap jenuh pada suhu tertentu, dinyatakan dalam persentase. Parameter ini sangat krusial karena jamur memiliki kandungan air hingga 85-90% dari berat basahnya.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Karakteristik dalam Budidaya Jamur</h4>
+                    <ul>
+                        <li>Kelembapan optimal untuk inkubasi miselium: 60-70%</li>
+                        <li>Kelembapan optimal untuk pembentukan tubuh buah: 80-95%</li>
+                        <li>Kelembapan terlalu rendah menyebabkan dehidrasi dan pertumbuhan terhambat</li>
+                        <li>Kelembapan terlalu tinggi meningkatkan risiko kontaminasi bakteri</li>
+                        <li>Fluktuasi kelembapan mempengaruhi tekstur dan kualitas jamur</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Fungsi Monitoring Kelembapan</h4>
+                    <ul>
+                        <li>Mempertahankan kondisi optimal untuk transpirasi jamur</li>
+                        <li>Mencegah dehidrasi tubuh buah yang menurunkan nilai jual</li>
+                        <li>Mengurangi risiko kontaminasi dengan menjaga kelembapan ideal</li>
+                        <li>Mengoptimalkan penyerapan nutrisi oleh miselium</li>
+                        <li>Mengatur timing penyiraman atau pengabutan secara presisi</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kelebihan Monitoring Kelembapan</h4>
+                    <ul class="advantages-list">
+                        <li>Peningkatan yield melalui kondisi optimal yang konsisten</li>
+                        <li>Kualitas jamur lebih baik dengan tekstur yang ideal</li>
+                        <li>Pengurangan limbah dari jamur yang rusak atau dehidrasi</li>
+                        <li>Efisiensi penggunaan air melalui kontrol yang presisi</li>
+                        <li>Data untuk memprediksi timing panen yang optimal</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kekurangan dan Tantangan</h4>
+                    <ul class="disadvantages-list">
+                        <li>Sensor kelembapan sensitif terhadap kontaminasi dan memerlukan pembersihan rutin</li>
+                        <li>Biaya operasional untuk sistem humidifikasi atau dehumidifikasi</li>
+                        <li>Kesulitan mempertahankan kelembapan tinggi di area dengan ventilasi tinggi</li>
+                        <li>Kalibrasi sensor yang kompleks dan periodic</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Manfaat untuk Petani</h4>
+                    <p>Kontrol kelembapan yang tepat dapat mengurangi tingkat kerugian panen hingga 40% dengan mencegah dehidrasi dan kontaminasi, serta meningkatkan nilai jual melalui kualitas produk yang superior.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Referensi Ilmiah</h4>
+                    <p><em>Stamets (2000) dalam "Growing Gourmet and Medicinal Mushrooms" menekankan bahwa pemeliharaan kelembapan pada rentang 85-90% selama fase fruiting merupakan faktor paling kritikal untuk mencapai biological efficiency maksimal.</em></p>
+                </div>
+            </div>
+
+            <!-- Topic 3: CO₂ -->
+            <div class="topic-card">
+                <h3>3. Karbon Dioksida (CO₂)</h3>
+
+                <div class="topic-section">
+                    <h4>Definisi</h4>
+                    <p>Karbon dioksida (CO₂) adalah gas hasil metabolisme respirasi jamur yang berperan sebagai signal molekuler dalam regulasi morfogenesis. Konsentrasi CO₂ di lingkungan budidaya mempengaruhi pola pertumbuhan dan pembentukan tubuh buah jamur.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Karakteristik dalam Budidaya Jamur</h4>
+                    <ul>
+                        <li>Konsentrasi CO₂ ambient normal: ~400-500 ppm</li>
+                        <li>Miselium mentolerir CO₂ tinggi (5,000-20,000 ppm)</li>
+                        <li>Pembentukan tubuh buah memerlukan CO₂ rendah (<1,000 ppm)</li>
+                        <li>CO₂ tinggi menyebabkan malformasi tubuh buah (tangkai panjang, tudung kecil)</li>
+                        <li>Ventilasi yang baik krusial untuk mengelola level CO₂</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Fungsi Monitoring CO₂</h4>
+                    <ul>
+                        <li>Mengindikasikan aktivitas metabolisme miselium</li>
+                        <li>Mengatur timing untuk memicu fase reproduktif</li>
+                        <li>Mengoptimalkan ventilasi untuk kualitas tubuh buah</li>
+                        <li>Deteksi dini kontaminasi yang meningkatkan respirasi</li>
+                        <li>Mengefisiensikan penggunaan energi untuk ventilasi</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kelebihan Monitoring CO₂</h4>
+                    <ul class="advantages-list">
+                        <li>Peningkatan kualitas morfologi tubuh buah</li>
+                        <li>Optimalisasi timing transisi fase vegetatif ke reproduktif</li>
+                        <li>Deteksi masalah ventilasi sebelum mempengaruhi hasil</li>
+                        <li>Efisiensi energi dengan ventilasi on-demand</li>
+                        <li>Data untuk analisis hubungan CO₂ dengan produktivitas</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kekurangan dan Tantangan</h4>
+                    <ul class="disadvantages-list">
+                        <li>Sensor CO₂ berkualitas tinggi memiliki biaya investasi signifikan</li>
+                        <li>Kalibrasi sensor CO₂ memerlukan gas standar</li>
+                        <li>Drift sensor seiring waktu memerlukan recalibration berkala</li>
+                        <li>Kompleksitas dalam merancang sistem ventilasi yang responsif</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Manfaat untuk Petani</h4>
+                    <p>Monitoring CO₂ memungkinkan petani menghasilkan jamur dengan morfologi yang ideal (tudung lebar, tangkai pendek) yang memiliki nilai pasar 30-50% lebih tinggi, sekaligus menghemat biaya energi ventilasi hingga 25%.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Referensi Ilmiah</h4>
+                    <p><em>Noble et al. (2009) dalam Journal of Applied Microbiology mendemonstrasikan bahwa kontrol CO₂ di bawah 1,000 ppm selama fase pinning meningkatkan uniformitas dan kualitas tubuh buah jamur tiram hingga 40%.</em></p>
+                </div>
+            </div>
+
+            <!-- Topic 4: Cahaya -->
+            <div class="topic-card">
+                <h3>4. Cahaya (Light)</h3>
+
+                <div class="topic-section">
+                    <h4>Definisi</h4>
+                    <p>Cahaya adalah radiasi elektromagnetik dalam spektrum yang dapat dipersepsikan oleh organisme. Dalam budidaya jamur, cahaya berperan sebagai trigger morfogenetik yang mengatur pembentukan tubuh buah, orientasi pertumbuhan (fototropisme), dan pigmentasi.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Karakteristik dalam Budidaya Jamur</h4>
+                    <ul>
+                        <li>Intensitas cahaya optimal: 200-500 lux untuk fase fruiting</li>
+                        <li>Inkubasi miselium dapat dilakukan dalam gelap total</li>
+                        <li>Cahaya diperlukan untuk inisiasi dan diferensiasi primordium</li>
+                        <li>Kualitas cahaya (spektrum) mempengaruhi pigmentasi tudung</li>
+                        <li>Fotoperiode (siklus terang-gelap) mengatur ritme pertumbuhan</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Fungsi Monitoring Cahaya</h4>
+                    <ul>
+                        <li>Memastikan intensitas cahaya optimal untuk pembentukan tubuh buah</li>
+                        <li>Mengatur orientasi pertumbuhan agar seragam</li>
+                        <li>Mengoptimalkan pigmentasi untuk nilai estetika</li>
+                        <li>Menghemat energi dengan pencahayaan yang efisien</li>
+                        <li>Mensinkronisasi siklus pertumbuhan untuk panen simultan</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kelebihan Monitoring Cahaya</h4>
+                    <ul class="advantages-list">
+                        <li>Peningkatan kualitas estetika produk</li>
+                        <li>Uniformitas pertumbuhan yang memudahkan panen</li>
+                        <li>Efisiensi energi pencahayaan hingga 40%</li>
+                        <li>Kontrol presisi untuk menginduksi pinning</li>
+                        <li>Data untuk optimalisasi jadwal pencahayaan</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kekurangan dan Tantangan</h4>
+                    <ul class="disadvantages-list">
+                        <li>Distribusi cahaya yang tidak merata dapat menyebabkan pertumbuhan tidak uniform</li>
+                        <li>Biaya untuk lampu LED full-spectrum yang optimal</li>
+                        <li>Heat stress dari sumber cahaya yang tidak tepat</li>
+                        <li>Kompleksitas dalam mengatur fotoperiode yang konsisten</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Manfaat untuk Petani</h4>
+                    <p>Kontrol pencahayaan yang tepat meningkatkan nilai estetika jamur, memudahkan manajemen panen dengan pertumbuhan yang sinkron, dan mengurangi biaya listrik hingga 40% melalui pencahayaan on-demand.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Referensi Ilmiah</h4>
+                    <p><em>Kües & Liu (2000) dalam "Fruiting Body Production in Basidiomycetes" menjelaskan bahwa cahaya dengan intensitas 300-500 lux pada spektrum biru (450-490 nm) optimal untuk inisiasi primordium pada kebanyakan jamur Pleurotus spp.</em></p>
+                </div>
+            </div>
+
+            <!-- Topic 5: pH -->
+            <div class="topic-card">
+                <h3>5. pH (Tingkat Keasaman)</h3>
+
+                <div class="topic-section">
+                    <h4>Definisi</h4>
+                    <p>pH adalah ukuran logaritmik konsentrasi ion hidrogen (H⁺) dalam larutan atau substrat, yang menentukan tingkat keasaman atau kebasaan. pH mempengaruhi ketersediaan nutrisi, aktivitas enzim, dan pertumbuhan mikroorganisme termasuk jamur.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Karakteristik dalam Budidaya Jamur</h4>
+                    <ul>
+                        <li>pH optimal untuk jamur tiram: 5.5-7.0</li>
+                        <li>pH initial substrat biasanya disesuaikan ke 6.0-6.5</li>
+                        <li>Jamur secara alami menurunkan pH substrat selama pertumbuhan</li>
+                        <li>pH ekstrem menghambat pertumbuhan dan meningkatkan kontaminasi</li>
+                        <li>pH mempengaruhi bioavailabilitas mineral dan nutrisi</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Fungsi Monitoring pH</h4>
+                    <ul>
+                        <li>Memastikan kondisi optimal untuk pertumbuhan miselium</li>
+                        <li>Mendeteksi kontaminasi yang sering mengubah pH drastis</li>
+                        <li>Mengoptimalkan ketersediaan nutrisi pada pH yang tepat</li>
+                        <li>Mencegah kondisi yang mendukung kompetitor atau patogen</li>
+                        <li>Memandu penyesuaian pH substrat untuk batch selanjutnya</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kelebihan Monitoring pH</h4>
+                    <ul class="advantages-list">
+                        <li>Deteksi dini masalah kontaminasi atau fermentasi anaerobik</li>
+                        <li>Optimalisasi efisiensi biologi melalui pH ideal</li>
+                        <li>Peningkatan konsistensi kualitas antar batch</li>
+                        <li>Pengurangan risiko gagal panen dari pH yang tidak sesuai</li>
+                        <li>Data untuk formulasi substrat yang lebih baik</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kekurangan dan Tantangan</h4>
+                    <ul class="disadvantages-list">
+                        <li>Sensor pH memerlukan pemeliharaan intensif dan kalibrasi rutin</li>
+                        <li>Pengukuran pH substrat padat lebih kompleks daripada larutan</li>
+                        <li>Probe pH memiliki masa pakai terbatas dan perlu penggantian berkala</li>
+                        <li>Koreksi pH substrat yang sudah terinokulasi sulit dilakukan</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Manfaat untuk Petani</h4>
+                    <p>Monitoring pH membantu petani mencapai biological efficiency yang lebih tinggi (75-85%), mengurangi tingkat kontaminasi hingga 50%, dan meningkatkan prediktabilitas hasil panen.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Referensi Ilmiah</h4>
+                    <p><em>Rajarathnam & Bano (1987) dalam "Pleurotus Mushrooms" mengidentifikasi pH 5.5-6.5 sebagai rentang optimal yang memaksimalkan aktivitas enzim ligninolitik dan selulose, kunci untuk decomposisi substrat lignocellulosic.</em></p>
+                </div>
+            </div>
+
+            <!-- Topic 6: Kadar Air -->
+            <div class="topic-card">
+                <h3>6. Kadar Air (Moisture Content)</h3>
+
+                <div class="topic-section">
+                    <h4>Definisi</h4>
+                    <p>Kadar air substrat adalah persentase kandungan air dalam substrat budidaya relatif terhadap berat total atau berat kering. Parameter ini berbeda dengan kelembapan udara dan krusial untuk pertumbuhan miselium serta ketersediaan nutrisi.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Karakteristik dalam Budidaya Jamur</h4>
+                    <ul>
+                        <li>Kadar air optimal substrat: 60-65% (basis berat basah)</li>
+                        <li>Kadar air terlalu rendah (<55%) menghambat kolonisasi miselium</li>
+                        <li>Kadar air terlalu tinggi (>70%) menyebabkan anaerobiosis dan fermentasi</li>
+                        <li>Kadar air mempengaruhi struktur fisik dan aerasi substrat</li>
+                        <li>Evaporasi selama inkubasi menurunkan kadar air secara gradual</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Fungsi Monitoring Kadar Air</h4>
+                    <ul>
+                        <li>Mengoptimalkan kondisi untuk kolonisasi miselium</li>
+                        <li>Mencegah dehidrasi atau waterlogging substrat</li>
+                        <li>Memandu timing penyiraman atau humidifikasi</li>
+                        <li>Mendeteksi zona kering yang dapat menghambat pertumbuhan</li>
+                        <li>Mengontrol konsistensi produksi antar batch</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kelebihan Monitoring Kadar Air</h4>
+                    <ul class="advantages-list">
+                        <li>Peningkatan biological efficiency melalui hidrasi optimal</li>
+                        <li>Pengurangan risiko kontaminasi dari kondisi anaerobic</li>
+                        <li>Efisiensi penggunaan air dengan irigasi presisi</li>
+                        <li>Peningkatan kecepatan kolonisasi miselium</li>
+                        <li>Data untuk optimasi formulasi substrat</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kekurangan dan Tantangan</h4>
+                    <ul class="disadvantages-list">
+                        <li>Sensor kelembapan substrat memerlukan kontak langsung dan rentan kontaminasi</li>
+                        <li>Heterogenitas kadar air dalam baglog sulit dimonitor secara komprehensif</li>
+                        <li>Kalibrasi sensor untuk tipe substrat spesifik diperlukan</li>
+                        <li>Koreksi kadar air post-inokulasi berisiko kontaminasi</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Manfaat untuk Petani</h4>
+                    <p>Kontrol kadar air yang presisi dapat meningkatkan kecepatan kolonisasi hingga 30%, mengurangi tingkat kontaminasi hingga 40%, dan meningkatkan yield total hingga 25%.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Referensi Ilmiah</h4>
+                    <p><em>Baysal et al. (2003) dalam "Cultivation of Oyster Mushroom on Waste Paper" mendemonstrasikan bahwa kadar air substrat 62-65% menghasilkan biological efficiency tertinggi (85-90%) pada jamur tiram.</em></p>
+                </div>
+            </div>
+
+            <!-- Topic 7: Pertumbuhan Jamur -->
+            <div class="topic-card">
+                <h3>7. Pertumbuhan Jamur (Mushroom Growth)</h3>
+
+                <div class="topic-section">
+                    <h4>Definisi</h4>
+                    <p>Pertumbuhan jamur mencakup seluruh proses developmental dari inokulasi spora/miselium, kolonisasi substrat, inisiasi primordium (pinning), hingga maturasi tubuh buah. Monitoring pertumbuhan melibatkan pengamatan visual, pengukuran biomassa, dan tracking fase developmental.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Karakteristik Pertumbuhan Jamur Tiram</h4>
+                    <ul>
+                        <li>Fase kolonisasi (spawning): 15-25 hari pada suhu optimal</li>
+                        <li>Fase pinning (inisiasi): 3-7 hari setelah kondisi pemicu</li>
+                        <li>Fase perkembangan tubuh buah: 5-7 hari hingga panen</li>
+                        <li>Multiple flushes (1-4 periode panen dari satu baglog)</li>
+                        <li>Growth rate dipengaruhi oleh genetik, substrat, dan kondisi lingkungan</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Fungsi Monitoring Pertumbuhan</h4>
+                    <ul>
+                        <li>Tracking fase developmental untuk timing manajemen yang tepat</li>
+                        <li>Prediksi waktu panen dengan akurasi tinggi</li>
+                        <li>Deteksi anomali pertumbuhan sebagai indikator masalah</li>
+                        <li>Evaluasi efektivitas kondisi lingkungan</li>
+                        <li>Optimasi timing untuk memicu flush berikutnya</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kelebihan Monitoring Pertumbuhan</h4>
+                    <ul class="advantages-list">
+                        <li>Perencanaan logistik panen dan distribusi yang lebih baik</li>
+                        <li>Deteksi dini masalah yang mempengaruhi yield</li>
+                        <li>Optimasi timing intervensi (shocking, watering)</li>
+                        <li>Data untuk benchmarking dan continuous improvement</li>
+                        <li>Peningkatan efisiensi tenaga kerja dengan jadwal panen terpredict</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kekurangan dan Tantangan</h4>
+                    <ul class="disadvantages-list">
+                        <li>Monitoring visual manual intensif labor</li>
+                        <li>Variabilitas individual antar baglog menyulitkan generalisasi</li>
+                        <li>Computer vision untuk automated monitoring masih mahal</li>
+                        <li>Kompleksitas dalam mengintegrasikan data growth dengan parameter lingkungan</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Manfaat untuk Petani</h4>
+                    <p>Monitoring pertumbuhan yang sistematis meningkatkan efisiensi operasional hingga 35%, mengurangi waste dari panen terlambat, dan memungkinkan planning produksi yang lebih akurat untuk memenuhi permintaan pasar.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Referensi Ilmiah</h4>
+                    <p><em>Gregori et al. (2007) dalam "Cultivation Techniques and Medicinal Properties of Pleurotus spp." mengidentifikasi bahwa tracking fase pertumbuhan dengan presisi dapat meningkatkan total yield 20-30% melalui optimasi timing harvest pada masa maturity optimal.</em></p>
+                </div>
+            </div>
+
+            <!-- Topic 8: Integrasi Data Biologi ke Sistem IoT -->
+            <div class="topic-card">
+                <h3>8. Integrasi Data Biologi ke Sistem IoT</h3>
+
+                <div class="topic-section">
+                    <h4>Definisi</h4>
+                    <p>Integrasi data biologi ke sistem IoT (Internet of Things) adalah proses menghubungkan sensor-sensor lingkungan dan biologis dengan platform digital untuk pengumpulan, transmisi, analisis, dan visualisasi data secara real-time. Sistem ini mengkonversi data analog biologis menjadi digital insights yang actionable.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Karakteristik Sistem IoT untuk Budidaya Jamur</h4>
+                    <ul>
+                        <li>Multi-sensor array: suhu, kelembapan, CO₂, cahaya, pH, moisture</li>
+                        <li>Microcontroller (ESP32-S3) sebagai edge computing device</li>
+                        <li>Protokol komunikasi: LoRa untuk long-range, WiFi untuk cloud connectivity</li>
+                        <li>Cloud database untuk historical data storage</li>
+                        <li>Dashboard web/mobile untuk monitoring dan kontrol</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Fungsi Integrasi IoT</h4>
+                    <ul>
+                        <li>Real-time monitoring kondisi mikroklimat dari jarak jauh</li>
+                        <li>Automated alerts saat parameter keluar dari rentang optimal</li>
+                        <li>Historical data analysis untuk pattern recognition</li>
+                        <li>Automated control system untuk environmental actuators</li>
+                        <li>Multi-kumbung management dari single dashboard</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kelebihan Integrasi IoT</h4>
+                    <ul class="advantages-list">
+                        <li>Pengurangan labor cost hingga 40% dengan automation</li>
+                        <li>Response time cepat terhadap kondisi abnormal</li>
+                        <li>Data-driven decision making untuk optimasi kontinyu</li>
+                        <li>Scalability - mudah menambah sensor atau kumbung baru</li>
+                        <li>Remote monitoring memungkinkan manajemen dari mana saja</li>
+                        <li>Transparansi data untuk audit dan sertifikasi</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kekurangan dan Tantangan</h4>
+                    <ul class="disadvantages-list">
+                        <li>Investasi awal untuk hardware dan software development signifikan</li>
+                        <li>Memerlukan infrastruktur (internet, listrik) yang reliable</li>
+                        <li>Learning curve untuk petani tradisional</li>
+                        <li>Maintenance dan troubleshooting memerlukan technical expertise</li>
+                        <li>Data privacy dan security concerns</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Manfaat untuk Petani</h4>
+                    <p>Sistem IoT terintegrasi meningkatkan produktivitas 25-40%, mengurangi biaya operasional 30%, dan membuka peluang untuk premium pricing melalui data transparency dan quality assurance. ROI (Return on Investment) biasanya tercapai dalam 18-24 bulan.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Referensi Ilmiah</h4>
+                    <p><em>Nasirahmadi & Hensel (2022) dalam "Smart Agriculture: IoT Applications in Agriculture" menunjukkan bahwa implementasi IoT dalam controlled environment agriculture meningkatkan resource use efficiency hingga 35% dan mengurangi environmental impact secara signifikan.</em></p>
+                </div>
+            </div>
+
+            <!-- Topic 9: Diagram Alur Sistem -->
+            <div class="topic-card">
+                <h3>9. Diagram Alur Sistem (System Flow Diagram)</h3>
+
+                <div class="topic-section">
+                    <h4>Definisi</h4>
+                    <p>Diagram alur sistem adalah representasi visual dari arsitektur cyber-physical system yang menggambarkan aliran data, proses, dan interaksi antar komponen dalam sistem monitoring dan kontrol budidaya jamur berbasis IoT.</p>
+                </div>
+
+                <div class="diagram-container">
+                    <h4>Arsitektur Sistem Myco-Tech</h4>
+                    <pre style="text-align: left; font-family: monospace; background: #f6f8fa; padding: 15px; border-radius: 6px; overflow-x: auto;">
+┌─────────────────────────────────────────────────────────────────┐
+│                         LAYER 1: SENSOR                          │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐       │
+│  │DHT22     │  │MQ-135    │  │BH1750    │  │pH Sensor │  ...   │
+│  │(Temp/RH) │  │(CO₂/Gas) │  │(Light)   │  │(pH)      │        │
+│  └────┬─────┘  └────┬─────┘  └────┬─────┘  └────┬─────┘       │
+└───────┼─────────────┼─────────────┼─────────────┼──────────────┘
+        │             │             │             │
+        └─────────────┴─────────────┴─────────────┘
+                           ↓
+┌─────────────────────────────────────────────────────────────────┐
+│                    LAYER 2: EDGE COMPUTING                       │
+│                      ┌──────────────┐                            │
+│                      │   ESP32-S3   │                            │
+│                      │ Microcontroller                           │
+│                      │  - Data Acquisition                       │
+│                      │  - Preprocessing                          │
+│                      │  - Local Logic                            │
+│                      └───────┬──────┘                            │
+└─────────────────────────────┼────────────────────────────────────┘
+                              ↓
+                    ┌─────────┴─────────┐
+                    │                   │
+             ┌──────▼──────┐    ┌──────▼──────┐
+             │   LoRa      │    │   WiFi      │
+             │ Long Range  │    │  Internet   │
+             └──────┬──────┘    └──────┬──────┘
+                    │                   │
+┌───────────────────┴───────────────────┴─────────────────────────┐
+│                      LAYER 3: NETWORK                            │
+│                  ┌──────────────────┐                            │
+│                  │  LoRa Gateway    │                            │
+│                  └────────┬─────────┘                            │
+└───────────────────────────┼──────────────────────────────────────┘
+                            ↓
+┌─────────────────────────────────────────────────────────────────┐
+│                    LAYER 4: CLOUD SERVICES                       │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐          │
+│  │   Database   │  │  Analytics   │  │   API        │          │
+│  │   (TimeSeries│  │  Engine      │  │   Gateway    │          │
+│  │    Storage)  │  │              │  │              │          │
+│  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘          │
+└─────────┼──────────────────┼──────────────────┼──────────────────┘
+          └──────────────────┴──────────────────┘
+                           ↓
+┌─────────────────────────────────────────────────────────────────┐
+│                  LAYER 5: APPLICATION                            │
+│  ┌──────────────────────────────────────────────────┐           │
+│  │          Web Dashboard / Mobile App              │           │
+│  │  - Real-time Monitoring                          │           │
+│  │  - Historical Data Visualization                 │           │
+│  │  - Alert Management                              │           │
+│  │  - Control Interface                             │           │
+│  └──────────────────────────────────────────────────┘           │
+└─────────────────────────────────────────────────────────────────┘
+                           ↓
+                    ┌──────────────┐
+                    │   FARMER     │
+                    │   (End User) │
+                    └──────────────┘
+                    </pre>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Komponen Sistem</h4>
+                    <ul>
+                        <li><strong>Sensor Layer:</strong> Mengukur parameter fisik dan kimia lingkungan</li>
+                        <li><strong>Edge Computing:</strong> ESP32-S3 melakukan preprocessing dan filtering data</li>
+                        <li><strong>Network Layer:</strong> LoRa untuk jangkauan jauh, WiFi untuk cloud connectivity</li>
+                        <li><strong>Cloud Services:</strong> Database time-series, analytics engine, dan API</li>
+                        <li><strong>Application Layer:</strong> Dashboard web/mobile untuk user interface</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Alur Data</h4>
+                    <ol>
+                        <li>Sensor mengukur parameter lingkungan setiap 5-10 menit</li>
+                        <li>ESP32-S3 mengakuisisi data dari multiple sensors via I2C/SPI/Analog</li>
+                        <li>Data di-preprocess (filtering, averaging) di edge device</li>
+                        <li>Data ditransmit via LoRa ke gateway atau langsung via WiFi ke cloud</li>
+                        <li>Cloud database menyimpan time-series data</li>
+                        <li>Analytics engine melakukan real-time analysis dan trigger alerts</li>
+                        <li>Dashboard menampilkan data secara visual untuk user</li>
+                        <li>User dapat remote control actuators (fan, humidifier) via dashboard</li>
+                    </ol>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Manfaat Sistem Terintegrasi</h4>
+                    <p>Arsitektur sistem yang well-designed memastikan reliability, scalability, dan maintainability. Petani mendapat real-time visibility terhadap seluruh operasi, dapat respond cepat terhadap anomali, dan mengakumulasi data untuk continuous improvement.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Referensi Ilmiah</h4>
+                    <p><em>Gubbi et al. (2013) dalam "Internet of Things (IoT): A Vision, Architectural Elements, and Future Directions" mendefinisikan best practices untuk IoT architecture dalam agriculture yang memaksimalkan reliability dan minimize latency.</em></p>
+                </div>
+            </div>
+
+            <!-- Topic 10: Aktivitas Metabolisme Jamur -->
+            <div class="topic-card">
+                <h3>10. Aktivitas Metabolisme Jamur</h3>
+
+                <div class="topic-section">
+                    <h4>Definisi</h4>
+                    <p>Metabolisme jamur adalah keseluruhan reaksi biokimia yang terjadi dalam sel jamur untuk mengkonversi nutrisi menjadi energi (ATP) dan biomolekul struktural. Aktivitas metabolisme mencakup respirasi aerobik, sintesis enzim ekstraselular, dan biosintesis komponen sel.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Karakteristik Metabolisme Jamur Tiram</h4>
+                    <ul>
+                        <li>Heterotrofik: memerlukan sumber karbon organik</li>
+                        <li>Aerobik obligat: memerlukan oksigen untuk respirasi efisien</li>
+                        <li>Sekresi enzim ligninolitik (laccase, lignin peroxidase) dan cellulolytic</li>
+                        <li>Respirasi rate meningkat selama kolonisasi aktif</li>
+                        <li>Biosintesis protein intensif selama pembentukan tubuh buah</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Indikator Aktivitas Metabolisme</h4>
+                    <ul>
+                        <li><strong>Konsumsi O₂:</strong> Indikator respirasi aerobik</li>
+                        <li><strong>Produksi CO₂:</strong> Produk samping respirasi</li>
+                        <li><strong>Heat Production:</strong> Metabolisme eksotermik menghasilkan panas</li>
+                        <li><strong>pH Changes:</strong> Sekresi asam organik mengasamkan substrat</li>
+                        <li><strong>Biomass Accumulation:</strong> Pertumbuhan miselium</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Fungsi Monitoring Metabolisme</h4>
+                    <ul>
+                        <li>Menilai kesehatan dan vigor miselium</li>
+                        <li>Deteksi dini kondisi stres atau kontaminasi</li>
+                        <li>Optimasi timing untuk transisi fase developmental</li>
+                        <li>Prediksi yield berdasarkan metabolic activity</li>
+                        <li>Evaluasi efisiensi konversi substrat</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kelebihan Monitoring Metabolisme</h4>
+                    <ul class="advantages-list">
+                        <li>Early warning system untuk masalah pertumbuhan</li>
+                        <li>Optimasi feeding strategy untuk substrat supplementasi</li>
+                        <li>Benchmarking performance antar strain atau formulation</li>
+                        <li>Data untuk modeling pertumbuhan dan yield prediction</li>
+                        <li>Peningkatan biological efficiency melalui metabolic optimization</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kekurangan dan Tantangan</h4>
+                    <ul class="disadvantages-list">
+                        <li>Pengukuran langsung metabolisme (O₂/CO₂) memerlukan equipment khusus</li>
+                        <li>Interpretasi data metabolik kompleks dan memerlukan expertise</li>
+                        <li>Variabilitas tinggi antar individual baglog</li>
+                        <li>Sulit membedakan metabolisme jamur dari kontaminan</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Manfaat untuk Petani</h4>
+                    <p>Understanding metabolisme memungkinkan petani untuk fine-tune kondisi lingkungan, mengidentifikasi formulasi substrat terbaik, dan meningkatkan biological efficiency hingga 90% atau lebih.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Referensi Ilmiah</h4>
+                    <p><em>Moore et al. (2008) dalam "21st Century Guidebook to Fungi" menjelaskan bahwa monitoring respiratory quotient (RQ = CO₂ produced/O₂ consumed) dapat mengindikasikan efisiensi metabolik dan mendeteksi onset anaerobic conditions.</em></p>
+                </div>
+            </div>
+
+            <!-- Topic 11: Tingkat Kontaminasi -->
+            <div class="topic-card">
+                <h3>11. Tingkat Kontaminasi (Contamination Level)</h3>
+
+                <div class="topic-section">
+                    <h4>Definisi</h4>
+                    <p>Kontaminasi adalah keberadaan mikroorganisme kompetitor (bakteri, kapang, khamir) yang tidak diinginkan dalam kultur jamur. Kontaminasi merupakan salah satu penyebab utama kegagalan produksi dan dapat menyebabkan kerugian hingga 100% dari batch yang terinfeksi.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Jenis Kontaminan Umum</h4>
+                    <ul>
+                        <li><strong>Trichoderma spp. (Green Mold):</strong> Kapang hijau agresif</li>
+                        <li><strong>Aspergillus spp. (Black Mold):</strong> Kapang hitam producing toxins</li>
+                        <li><strong>Penicillium spp. (Blue-Green Mold):</strong> Fast-growing competitor</li>
+                        <li><strong>Bacterial Blotch:</strong> Pseudomonas causing wet rot</li>
+                        <li><strong>Cobweb Mold (Dactylium):</strong> Membentuk mycelium seperti jaring</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Faktor yang Mempengaruhi Kontaminasi</h4>
+                    <ul>
+                        <li>Kualitas sterilisasi substrat (pasteurisasi vs sterilisasi)</li>
+                        <li>Sanitasi lingkungan kerja dan peralatan</li>
+                        <li>Kualitas dan vigor spawn (bibit)</li>
+                        <li>Kondisi lingkungan (kelembapan tinggi + ventilasi buruk = high risk)</li>
+                        <li>Handling practices dan biosecurity measures</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Metode Deteksi Kontaminasi</h4>
+                    <ul>
+                        <li><strong>Visual Inspection:</strong> Perubahan warna, bau, tekstur</li>
+                        <li><strong>Microscopic Analysis:</strong> Identifikasi morfologi kontaminan</li>
+                        <li><strong>Metabolic Indicators:</strong> Unusual CO₂ spike, pH drop</li>
+                        <li><strong>Computer Vision:</strong> AI-based automated detection</li>
+                        <li><strong>Microbial Testing:</strong> Kultur plate untuk quantification</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Strategi Pencegahan dan Kontrol</h4>
+                    <ul class="advantages-list">
+                        <li>Sterilisasi/pasteurisasi substrat yang proper (121°C, 15 psi, 90 min)</li>
+                        <li>Inokulasi dalam laminar flow hood atau clean room</li>
+                        <li>Penggunaan spawn rate yang adequate (3-5% berat substrat)</li>
+                        <li>Monitoring dan kontrol parameter lingkungan optimal</li>
+                        <li>Isolasi baglog kontaminasi segera untuk prevent spreading</li>
+                        <li>Sanitasi rutin fasilitas dengan disinfectant (alcohol 70%, H₂O₂)</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kerugian dari Kontaminasi</h4>
+                    <ul class="disadvantages-list">
+                        <li>Kehilangan total batch yang terkontaminasi (100% loss)</li>
+                        <li>Risiko spreading ke baglog sehat nearby</li>
+                        <li>Waste disposal cost untuk baglog terkontaminasi</li>
+                        <li>Delayed production cycle dan lost revenue</li>
+                        <li>Potential health risks dari mycotoxins (Aspergillus)</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Manfaat Monitoring Kontaminasi</h4>
+                    <p>Sistem monitoring dan early detection dapat mengurangi contamination rate dari 20-30% menjadi <5%, menghemat biaya hingga ratusan juta rupiah per tahun untuk operasi skala menengah.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Referensi Ilmiah</h4>
+                    <p><em>Sharma (2012) dalam "Mushroom Cultivation" mengidentifikasi bahwa 70% kegagalan produksi disebabkan oleh kontaminasi, dan bahwa implementation strict biosecurity protocol dapat mengurangi contamination rate hingga 80%.</em></p>
+                </div>
+            </div>
+
+            <!-- Topic 12: Nutrisi Jamur -->
+            <div class="topic-card">
+                <h3>12. Nutrisi Jamur (Mushroom Nutrition)</h3>
+
+                <div class="topic-section">
+                    <h4>Definisi</h4>
+                    <p>Nutrisi jamur mencakup keseluruhan komponen kimia yang diperlukan untuk pertumbuhan, development, dan reproduksi jamur. Sebagai organisme heterotrofik, jamur memerlukan sumber karbon organik, nitrogen, mineral, vitamin, dan trace elements dari substrat.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kebutuhan Nutrisi Esensial</h4>
+                    <ul>
+                        <li><strong>Karbon (C):</strong> Dari selulosa, hemiselulosa, lignin (30-50% substrat dry weight)</li>
+                        <li><strong>Nitrogen (N):</strong> Dari protein, urea, ammonium (C:N ratio optimal 30:1 hingga 40:1)</li>
+                        <li><strong>Fosfor (P):</strong> Untuk ATP, DNA, membrane (0.5-1% dry weight)</li>
+                        <li><strong>Kalium (K):</strong> Untuk osmotic regulation dan enzim (0.5-1.5% dry weight)</li>
+                        <li><strong>Magnesium (Mg), Kalsium (Ca), Sulfur (S):</strong> Macrominerals</li>
+                        <li><strong>Trace elements:</strong> Fe, Zn, Cu, Mn, Mo (< 100 ppm)</li>
+                        <li><strong>Vitamins:</strong> Thiamine, biotin (kadang required)</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Sumber Nutrisi dalam Substrat</h4>
+                    <ul>
+                        <li><strong>Jerami padi/gandum:</strong> Sumber karbon utama, lignocellulosic</li>
+                        <li><strong>Dedak (bran):</strong> Protein, vitamin, mineral supplement</li>
+                        <li><strong>Kapur (CaCO₃):</strong> pH buffer dan sumber kalsium</li>
+                        <li><strong>Gypsum (CaSO₄):</strong> Sumber kalsium dan sulfur</li>
+                        <li><strong>Coffee ground/spent:</strong> Nitrogen supplement</li>
+                        <li><strong>Soybean hulls:</strong> High protein supplement</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Fungsi Monitoring Nutrisi</h4>
+                    <ul>
+                        <li>Optimasi formulasi substrat untuk maksimalkan yield</li>
+                        <li>Mendeteksi nutrient deficiency atau excess</li>
+                        <li>Prediksi biological efficiency berdasarkan nutrient profile</li>
+                        <li>Designing supplementation strategy untuk multiple flushes</li>
+                        <li>Quality control untuk konsistensi antar batch</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kelebihan Nutrisi Optimal</h4>
+                    <ul class="advantages-list">
+                        <li>Peningkatan biological efficiency hingga 100%+</li>
+                        <li>Kecepatan kolonisasi lebih cepat (faster to market)</li>
+                        <li>Higher number of flushes (3-4 vs 1-2)</li>
+                        <li>Better nutritional quality jamur (higher protein, minerals)</li>
+                        <li>Stronger disease resistance</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Kekurangan Nutrisi Berlebih</h4>
+                    <ul class="disadvantages-list">
+                        <li>Excess nitrogen meningkatkan risiko kontaminasi bakteri</li>
+                        <li>Biaya lebih tinggi untuk supplements</li>
+                        <li>Heat generation berlebih selama colonization</li>
+                        <li>Imbalanced C:N ratio dapat menghambat fruiting</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Manfaat untuk Petani</h4>
+                    <p>Optimasi nutrisi substrat dapat meningkatkan yield 40-60%, memperpanjang productive life baglog, dan meningkatkan nilai nutrisi jamur yang diproduksi, memberikan competitive advantage di pasar.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Referensi Ilmiah</h4>
+                    <p><em>Philippoussis (2009) dalam "Production of Mushrooms Using Agro-Industrial Residues as Substrates" mendemonstrasikan bahwa supplementation dengan 5-10% wheat bran meningkatkan biological efficiency jamur tiram dari 65% menjadi 95%.</em></p>
+                </div>
+            </div>
+
+            <!-- Topic 13: Fase Pertumbuhan -->
+            <div class="topic-card">
+                <h3>13. Fase Pertumbuhan (Growth Phases)</h3>
+
+                <div class="topic-section">
+                    <h4>Definisi</h4>
+                    <p>Siklus hidup budidaya jamur terdiri dari beberapa fase pertumbuhan yang distinct, masing-masing memerlukan kondisi lingkungan dan manajemen yang berbeda. Memahami dan mengoptimalkan setiap fase adalah kunci untuk mencapai produktivitas maksimal.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Fase 1: Inokulasi dan Kolonisasi Awal (Spawn Run)</h4>
+                    <ul>
+                        <li><strong>Durasi:</strong> 3-7 hari</li>
+                        <li><strong>Karakteristik:</strong> Miselium dari spawn mulai mengkolonisasi substrat di sekitar titik inokulasi</li>
+                        <li><strong>Kondisi optimal:</strong> Suhu 24-28°C, kelembapan 60-70%, gelap total</li>
+                        <li><strong>Management:</strong> Minimize disturbance, monitor for contamination</li>
+                        <li><strong>Indicator sukses:</strong> Visible white mycelium spreading dari spawn</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Fase 2: Kolonisasi Penuh (Full Colonization)</h4>
+                    <ul>
+                        <li><strong>Durasi:</strong> 15-25 hari total dari inokulasi</li>
+                        <li><strong>Karakteristik:</strong> Miselium mengkolonisasi seluruh volume substrat</li>
+                        <li><strong>Kondisi optimal:</strong> Suhu 24-26°C, kelembapan 60-70%, minimal light</li>
+                        <li><strong>Management:</strong> Pastikan ventilasi adequate untuk gas exchange</li>
+                        <li><strong>Indicator sukses:</strong> Substrat fully covered dengan dense white mycelium</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Fase 3: Pinning (Inisiasi Tubuh Buah)</h4>
+                    <ul>
+                        <li><strong>Durasi:</strong> 3-7 hari</li>
+                        <li><strong>Karakteristik:</strong> Primordium (pin) mulai terbentuk</li>
+                        <li><strong>Kondisi optimal:</strong> Suhu drop ke 18-22°C, kelembapan 85-95%, cahaya 300-500 lux, CO₂ <1000 ppm</li>
+                        <li><strong>Management:</strong> Shocking (cold shock, light exposure), increased FAE (fresh air exchange)</li>
+                        <li><strong>Indicator sukses:</strong> Uniform pinning dengan density tinggi</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Fase 4: Perkembangan Tubuh Buah (Fruiting)</h4>
+                    <ul>
+                        <li><strong>Durasi:</strong> 5-7 hari dari pin hingga harvest size</li>
+                        <li><strong>Karakteristik:</strong> Pins berkembang menjadi tubuh buah mature</li>
+                        <li><strong>Kondisi optimal:</strong> Suhu 18-22°C, kelembapan 85-90%, cahaya continuous, high FAE</li>
+                        <li><strong>Management:</strong> Monitor growth daily, prepare untuk harvest</li>
+                        <li><strong>Indicator sukses:</strong> Rapid size increase, caps expanding</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Fase 5: Panen dan Resting (Harvest & Rest Period)</h4>
+                    <ul>
+                        <li><strong>Durasi panen:</strong> Saat caps just before flattening</li>
+                        <li><strong>Durasi resting:</strong> 7-14 hari antara flushes</li>
+                        <li><strong>Management:</strong> Clean harvest (twist & pull), remove stubs, reduce watering</li>
+                        <li><strong>Subsequent flushes:</strong> Repeat shocking untuk trigger flush ke-2, 3, dst</li>
+                        <li><strong>Declining yields:</strong> Flush 1 (100%), Flush 2 (60-70%), Flush 3 (30-40%)</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Optimasi Per Fase</h4>
+                    <ul class="advantages-list">
+                        <li>Fase-specific environmental control meningkatkan yield hingga 40%</li>
+                        <li>Timing yang tepat untuk transition antar fase krusial</li>
+                        <li>Monitoring growth stage memungkinkan predictive harvesting</li>
+                        <li>Understanding phases memudahkan troubleshooting</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Tantangan</h4>
+                    <ul class="disadvantages-list">
+                        <li>Variability dalam timing antar individual baglog</li>
+                        <li>Environmental control yang dynamic memerlukan automation</li>
+                        <li>Learning curve untuk mengenali optimal harvest timing</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Manfaat untuk Petani</h4>
+                    <p>Pemahaman mendalam tentang fase pertumbuhan memungkinkan petani untuk mengatur production schedule yang predictable, mengoptimalkan resource allocation, dan mencapai consistent quality across batches.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Referensi Ilmiah</h4>
+                    <p><em>Kües (2000) dalam "Life History and Developmental Processes in the Basidiomycete Coprinus cinereus" menjelaskan molecular mechanisms yang mengatur transisi antar fase developmental dan environmental cues yang diperlukan.</em></p>
+                </div>
+            </div>
+
+            <!-- Topic 14: Respon Biologis terhadap Perubahan Lingkungan -->
+            <div class="topic-card">
+                <h3>14. Respon Biologis terhadap Perubahan Lingkungan</h3>
+
+                <div class="topic-section">
+                    <h4>Definisi</h4>
+                    <p>Respon biologis adalah perubahan fisiologis, morfologis, atau behavioral yang ditunjukkan organisme (dalam hal ini jamur) sebagai adaptasi terhadap perubahan kondisi lingkungan. Jamur memiliki plastisitas phenotypic yang tinggi untuk beradaptasi dengan environmental fluctuations.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Respon terhadap Stres Suhu</h4>
+                    <ul>
+                        <li><strong>Heat Stress (>30°C):</strong>
+                            <ul>
+                                <li>Penurunan growth rate drastis</li>
+                                <li>Induksi heat shock proteins (HSPs)</li>
+                                <li>Inhibisi fruiting bodies formation</li>
+                                <li>Increased susceptibility to contamination</li>
+                            </ul>
+                        </li>
+                        <li><strong>Cold Stress (<15°C):</strong>
+                            <ul>
+                                <li>Metabolisme melambat significantly</li>
+                                <li>Dapat trigger pinning (cold shock treatment)</li>
+                                <li>Increased membrane fluidity adaptations</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Respon terhadap Stres Air</h4>
+                    <ul>
+                        <li><strong>Drought Stress:</strong>
+                            <ul>
+                                <li>Accumulation compatible solutes (trehalose, glycerol)</li>
+                                <li>Reduced transpiration rate</li>
+                                <li>Stunted growth dan malformed fruiting bodies</li>
+                                <li>Premature spore release</li>
+                            </ul>
+                        </li>
+                        <li><strong>Excess Water:</strong>
+                            <ul>
+                                <li>Anaerobic stress, shift to fermentation</li>
+                                <li>Accumulation of toxic metabolites</li>
+                                <li>Increased bacterial contamination risk</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Respon terhadap Perubahan CO₂/O₂</h4>
+                    <ul>
+                        <li><strong>High CO₂ (>5000 ppm):</strong>
+                            <ul>
+                                <li>Elongasi stem (stipe) berlebihan</li>
+                                <li>Reduced cap development</li>
+                                <li>Malformed morphology</li>
+                            </ul>
+                        </li>
+                        <li><strong>Low O₂ (<18%):</strong>
+                            <ul>
+                                <li>Inhibisi fruiting</li>
+                                <li>Shift metabolism toward fermentation</li>
+                                <li>Accumulation of ethanol</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Respon terhadap Perubahan Cahaya</h4>
+                    <ul>
+                        <li><strong>Light Induction:</strong> Trigger photomorphogenesis, inisiasi fruiting</li>
+                        <li><strong>Phototropism:</strong> Pertumbuhan menuju sumber cahaya</li>
+                        <li><strong>Pigmentation:</strong> Light intensity mengatur intensity pigmen melanin di cap</li>
+                        <li><strong>Circadian Rhythm:</strong> Light-dark cycle sinkronisasi developmental events</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Respon terhadap Stres Nutrisi</h4>
+                    <ul>
+                        <li><strong>N-Limitation:</strong> Trigger fruiting body formation (starvation response)</li>
+                        <li><strong>C-Limitation:</strong> Reduced growth, premature senescence</li>
+                        <li><strong>Mineral Deficiency:</strong> Chlorosis (paling), reduced yield</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Plastisitas Phenotypic dan Adaptasi</h4>
+                    <ul>
+                        <li>Jamur dapat "sense" environmental cues via membrane receptors</li>
+                        <li>Signal transduction pathways activate gene expression changes</li>
+                        <li>Epigenetic modifications dapat create "memory" dari past stress</li>
+                        <li>Trade-offs: Resources dialihkan dari growth ke stress response</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Implikasi untuk Budidaya</h4>
+                    <ul class="advantages-list">
+                        <li>Understanding respon memungkinkan strategic use of stress untuk induce fruiting</li>
+                        <li>Prediksi performa based on environmental history</li>
+                        <li>Designing stress-hardening protocols untuk meningkatkan resilience</li>
+                        <li>Timing interventions untuk maximize positive outcomes</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Tantangan</h4>
+                    <ul class="disadvantages-list">
+                        <li>Respon non-linear dan context-dependent</li>
+                        <li>Interactive effects dari multiple stressors kompleks</li>
+                        <li>Strain-specific variations dalam stress tolerance</li>
+                        <li>Long-term cumulative effects sulit diprediksi</li>
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Manfaat untuk Petani</h4>
+                    <p>Memahami respon biologis memungkinkan petani untuk menggunakan environmental manipulation sebagai tool untuk mengoptimalkan pertumbuhan, menginduksi fruiting, dan meningkatkan stress tolerance jamur, ultimately meningkatkan productivity dan profitability.</p>
+                </div>
+
+                <div class="topic-section">
+                    <h4>Referensi Ilmiah</h4>
+                    <p><em>Sakamoto (2018) dalam "Cellular and Molecular Mechanisms of Environmental Stress Response in Mushrooms" mereview comprehensively bagaimana jamur mensense dan merespons berbagai environmental stresses, dengan aplikasi untuk optimasi budidaya komersial.</em></p>
+                </div>
+            </div>
+
+            <section style="margin-top: 40px; padding: 24px; background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 6px;">
+                <h2 style="color: #856404; margin-top: 0;">Catatan Penting</h2>
+                <p style="color: #856404;">Dokumentasi ini merupakan living document yang akan terus diperbarui seiring dengan perkembangan penelitian dan pengalaman praktis di lapangan. Data-data yang disajikan bersumber dari literatur ilmiah dan best practices dalam industri budidaya jamur.</p>
+                <p style="color: #856404; margin-bottom: 0;">Untuk implementasi praktis, selalu konsultasikan dengan tim Bio Consultant Myco-Tech dan sesuaikan dengan kondisi spesifik di lokasi budidaya Anda.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 Myco-Tech Project - HIMAIF × HIMALOGI | Universitas Wanita Internasional</p>
+            <p style="font-size: 0.9em; color: #6c757d; margin-top: 8px;">Dokumentasi Sistem Monitoring Biologis & IoT v1.0</p>
+        </footer>
+    </div>
+</body>
+</html>
