@@ -14,9 +14,9 @@
             padding: 0;
         }
         .container {
-            max-width: 980px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 45px;
+            padding: 40px 30px;
         }
         header {
             border-bottom: 1px solid #e1e4e8;
@@ -30,12 +30,13 @@
             color: #0366d6;
         }
         h2 {
-            font-size: 1.75em;
+            font-size: 1.5em;
             font-weight: 600;
             margin-top: 40px;
-            margin-bottom: 15px;
-            border-bottom: 1px solid #eaecef;
-            padding-bottom: 8px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eaecef;
+            padding-bottom: 10px;
+            color: #1a1a1a;
         }
         h3 {
             font-size: 1.25em;
@@ -60,10 +61,15 @@
         .profile-card {
             background-color: #fff;
             border: 1px solid #e1e4e8;
-            border-radius: 6px;
-            padding: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+            transition: all 0.2s ease;
+        }
+        .profile-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-color: #d1d5db;
         }
         .profile-header {
             display: flex;
@@ -88,9 +94,10 @@
             flex: 1;
         }
         .profile-name {
-            font-size: 1.5em;
+            font-size: 1.4em;
             font-weight: 600;
-            margin: 0 0 5px 0;
+            margin: 0 0 8px 0;
+            color: #1a1a1a;
         }
         .profile-role {
             color: #0366d6;
@@ -123,10 +130,11 @@
             margin-top: 15px;
         }
         .responsibilities {
-            background-color: #f6f8fa;
-            padding: 15px;
+            background-color: #f8f9fa;
+            padding: 20px;
             border-radius: 6px;
             margin-top: 15px;
+            border-left: 3px solid #0366d6;
         }
         .responsibilities ul {
             margin: 10px 0 0 0;
@@ -138,10 +146,11 @@
         .leadership-section {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 30px;
-            border-radius: 6px;
-            margin-bottom: 30px;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 40px;
             text-align: center;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
         }
         .leadership-section h2 {
             border-bottom: none;
@@ -221,21 +230,19 @@
 
                 <div class="profile-card">
                     <div class="profile-header">
-                        <div class="profile-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                            NT
-                        </div>
+                        <img src="https://github.com/user-attachments/assets/6836d014-9da5-4172-ab74-a7b39b25fce8" alt="Sinsin Makiyah Musaropah" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
                         <div class="profile-info">
-                            <h3 class="profile-name">Nazril Taufik</h3>
-                            <div class="profile-role">Ketua Tim & Project Manager</div>
+                            <h3 class="profile-name">Sinsin Makiyah Musaropah</h3>
+                            <div class="profile-role">Ketua Tim</div>
                             <span class="profile-org org-himaif">HIMAIF</span>
                             <span class="profile-org org-himalogi">HIMALOGI</span>
                             <div class="contact-info">
-                                📧 nazril.taufik@uwi.ac.id | 📱 +62 812-3456-7890
+                                📧 sinsinmakiyah26@gmail.com | 📱 083175570595
                             </div>
                         </div>
                     </div>
                     <div class="profile-description">
-                        <p>Nazril Taufik merupakan mahasiswa Teknik Informatika yang memiliki pengalaman dalam project management dan koordinasi lintas organisasi. Sebagai Ketua Tim, ia bertanggung jawab atas keseluruhan koordinasi, perencanaan strategis, dan memastikan sinergi antar departemen berjalan dengan baik.</p>
+                        <p>Sinsin Makiyah Musaropah adalah Ketua Tim Myco-Tech yang bertanggung jawab atas keseluruhan koordinasi, perencanaan strategis, dan memastikan sinergi antar departemen berjalan dengan baik.</p>
                     </div>
                     <div class="responsibilities">
                         <strong>Tanggung Jawab Utama:</strong>
@@ -256,20 +263,18 @@
 
                 <div class="profile-card">
                     <div class="profile-header">
-                        <div class="profile-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                            VP
-                        </div>
+                        <img src="https://github.com/user-attachments/assets/b5ed6689-bfdc-402b-a654-98455741e9d1" alt="Okta Ramdani" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
                         <div class="profile-info">
-                            <h3 class="profile-name">Viola Putri / Pio</h3>
-                            <div class="profile-role">Pimpinan HIMAIF & Co-Project Manager</div>
+                            <h3 class="profile-name">Okta Ramdani</h3>
+                            <div class="profile-role">Ketua HIMAIF</div>
                             <span class="profile-org org-himaif">HIMAIF</span>
                             <div class="contact-info">
-                                📧 viola.putri@uwi.ac.id | 📱 +62 813-4567-8901
+                                📧 okta.105240041@iwu.ac.id | 📱 083821728652
                             </div>
                         </div>
                     </div>
                     <div class="profile-description">
-                        <p>Viola Putri (Pio) adalah Ketua Himpunan Mahasiswa Informatika (HIMAIF) yang membawa perspektif teknologi digital dan software development ke dalam proyek. Dengan keahlian di bidang digital intelligence dan cloud computing, ia memimpin aspek teknologi digital proyek Myco-Tech.</p>
+                        <p>Okta Ramdani adalah Ketua Himpunan Mahasiswa Informatika (HIMAIF) yang membawa perspektif teknologi digital dan software development ke dalam proyek. Dengan keahlian di bidang digital intelligence dan cloud computing, ia memimpin aspek teknologi digital proyek Myco-Tech.</p>
                     </div>
                     <div class="responsibilities">
                         <strong>Tanggung Jawab Utama:</strong>
@@ -279,27 +284,24 @@
                             <li>Memastikan implementasi teknologi IoT dan sistem monitoring berjalan optimal</li>
                             <li>Mengelola strategi branding digital dan publikasi media sosial</li>
                             <li>Membangun kerjasama dengan organisasi lain untuk ekspansi proyek</li>
-                            <li>Mendukung Project Manager dalam pengambilan keputusan strategis</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="profile-card">
                     <div class="profile-header">
-                        <div class="profile-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                            MB
-                        </div>
+                        <img src="https://github.com/user-attachments/assets/b0751b98-742d-423c-bf11-47339a857dba" alt="Marsha Putri Komara" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
                         <div class="profile-info">
-                            <h3 class="profile-name">Marsha Bagja</h3>
-                            <div class="profile-role">Pimpinan HIMALOGI & Bio Consultant Lead</div>
+                            <h3 class="profile-name">Marsha Putri Komara</h3>
+                            <div class="profile-role">Ketua HIMALOGI</div>
                             <span class="profile-org org-himalogi">HIMALOGI</span>
                             <div class="contact-info">
-                                📧 marsha.bagja@uwi.ac.id | 📱 +62 814-5678-9012
+                                📧 ihapaaja15@gmail.com | 📱 083832533215
                             </div>
                         </div>
                     </div>
                     <div class="profile-description">
-                        <p>Marsha Bagja adalah Ketua Himpunan Mahasiswa Biologi (HIMALOGI) dengan spesialisasi dalam mikologi (ilmu jamur) dan bioteknologi. Sebagai Bio Consultant Lead, ia bertanggung jawab atas aspek biologi dan kloning jaringan dalam proyek ini, memastikan penerapan prinsip-prinsip biologi yang tepat.</p>
+                        <p>Marsha Putri Komara adalah Ketua Himpunan Mahasiswa Biologi (HIMALOGI) dengan spesialisasi dalam mikologi (ilmu jamur) dan bioteknologi. Sebagai pemimpin HIMALOGI, ia bertanggung jawab atas aspek biologi dan kloning jaringan dalam proyek ini, memastikan penerapan prinsip-prinsip biologi yang tepat.</p>
                     </div>
                     <div class="responsibilities">
                         <strong>Tanggung Jawab Utama:</strong>
@@ -321,7 +323,7 @@
 
                 <div class="profile-card" style="background-color: #f6f8fa;">
                     <h3>Departemen Bio Consultant (HIMALOGI)</h3>
-                    <p><strong>Lead:</strong> Marsha & Bagja</p>
+                    <p><strong>Anggota:</strong> Marsha, Bagja, Tia, dan 1 anggota lainnya (4 orang)</p>
                     <p>Tim yang fokus pada aspek biologi, kloning jaringan, dan pengembangan bibit unggul.</p>
                 </div>
 
