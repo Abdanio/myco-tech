@@ -5,106 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas Pokok & Fungsi - Myco-Tech</title>
     <link rel="stylesheet" href="github-minimal.css">
-
 </head>
-<body>
-    <div class="container">
-        <header>
-            <div class="logo-container">
-                <img src="https://github.com/user-attachments/assets/9de145b4-b16b-4ec4-9e88-2803e3b518d2" alt="HIMAIF Logo" class="logo-badge">
-                <img src="https://github.com/user-attachments/assets/6850b4f9-d61d-4342-aac4-dbf854c01710" alt="Myco-Tech Logo" class="logo-badge">
-                <img src="https://github.com/user-attachments/assets/629c12f6-d21f-46af-bb81-4cb589981cd7" alt="HIMALOGI Logo" class="logo-badge">
-            </div>
-            <div class="nav">
-                <a href="index.html">← Kembali ke Beranda</a>
-                <a href="profile-tim.html">Profil Tim</a>
-                <a href="dokumentasi.html">Dokumentasi</a>
-                <a href="kebijakan.html">Kebijakan</a>
-                <a href="ketentuan.html">Ketentuan</a>
-            </div>
-            <h1>Tugas Pokok & Fungsi</h1>
-            <p>Tim Myco-Tech - HIMAIF × HIMALOGI</p>
-        </header>
+<body class="docs-page">
 
-        <main>
-            <section>
-                <h2>Overview Proyek</h2>
-                <p>Proyek Myco-Tech merupakan inisiatif kolaborasi antara HIMAIF dan HIMALOGI untuk mengembangkan sistem Smart-Kumbung dan swasembada bibit unggul di Desa Cirateun Kulon. Proyek ini mengintegrasikan teknologi Internet of Things (IoT) dengan teknik kloning jaringan untuk meningkatkan produktivitas budidaya jamur.</p>
-            </section>
+    <!-- Sticky top header -->
+    <header class="docs-top-header">
+        <div class="logo-container">
+            <img src="https://github.com/user-attachments/assets/9de145b4-b16b-4ec4-9e88-2803e3b518d2" alt="HIMAIF Logo" class="logo-badge">
+            <img src="https://github.com/user-attachments/assets/6850b4f9-d61d-4342-aac4-dbf854c01710" alt="Myco-Tech Logo" class="logo-badge">
+            <img src="https://github.com/user-attachments/assets/629c12f6-d21f-46af-bb81-4cb589981cd7" alt="HIMALOGI Logo" class="logo-badge">
+        </div>
+        <span class="docs-site-title">Myco-<span>Tech</span></span>
+        <button class="sidebar-toggle-btn" onclick="toggleSidebar()" aria-label="Toggle sidebar">☰</button>
+    </header>
 
-            <section>
-                <h2>Departemen & Tugas Pokok</h2>
+    <div id="sidebar-backdrop" class="sidebar-backdrop" onclick="closeSidebar()"></div>
 
-                <div class="section-card">
-                    <h3><span class="badge">DEPT. BIOLOGI</span> Bio Consultant</h3>
-                    <p><strong>PIC:</strong> Marsha, Bagja, Triana & Rafly (4 orang)</p>
-                    <ul>
-                        <li><strong>Teknik Kloning Jaringan:</strong> Bertanggung jawab penuh atas implementasi teknik kloning jaringan untuk produksi bibit F0-F2 yang berkualitas tinggi dan mandiri.</li>
-                        <li><strong>SOP Sterilisasi:</strong> Menyusun dan mengimplementasikan Standard Operating Procedures (SOP) untuk sterilisasi kumbung dan perawatan baglog agar bebas kontaminasi.</li>
-                        <li><strong>Edukasi & Workshop:</strong> Menjadi pemateri utama dalam workshop edukasi biologi jamur kepada warga desa, memastikan transfer pengetahuan yang efektif.</li>
-                        <li><strong>Quality Control:</strong> Melakukan monitoring kualitas bibit dan memberikan rekomendasi perbaikan berdasarkan hasil observasi lapangan.</li>
-                    </ul>
+    <div class="docs-wrapper">
+
+        <!-- Left sidebar -->
+        <aside class="docs-sidebar" id="docs-sidebar">
+            <nav class="sidebar-nav" aria-label="Sidebar navigation">
+
+                <div class="sidebar-nav-section">
+                    <span class="sidebar-nav-section-title">Halaman</span>
+                    <a href="index.html" class="sidebar-nav-link">🏠 Beranda</a>
+                    <a href="tupoksi.html" class="sidebar-nav-link active">📋 Tupoksi</a>
+                    <a href="profile-tim.html" class="sidebar-nav-link">👥 Profil Tim</a>
+                    <a href="dokumentasi.html" class="sidebar-nav-link">📚 Dokumentasi</a>
+                    <a href="kebijakan.html" class="sidebar-nav-link">📜 Kebijakan</a>
+                    <a href="ketentuan.html" class="sidebar-nav-link">⚖️ Ketentuan</a>
                 </div>
 
-                <div class="section-card">
-                    <h3><span class="badge">DEPT. HARDWARE</span> Hardware & Field Engineering</h3>
-                    <p><strong>PIC:</strong> Okta, Wandi, Sinsin, Tia</p>
-                    <ul>
-                        <li><strong>Perakitan Perangkat IoT:</strong> Merakit dan mengkonfigurasi perangkat IoT (ESP32-S3, Sensor NPK 7-in-1, dan modul LoRa) untuk monitoring mikroklimat kumbung.</li>
-                        <li><strong>Instalasi Panel Surya:</strong> Melakukan instalasi panel surya sebagai sumber energi mandiri di kumbung, memastikan sistem dapat beroperasi 24/7.</li>
-                        <li><strong>Maintenance & Troubleshooting:</strong> Melakukan maintenance rutin dan troubleshooting perangkat keras langsung di lokasi untuk memastikan sistem berjalan optimal.</li>
-                        <li><strong>Testing & Calibration:</strong> Melakukan kalibrasi sensor dan testing sistem secara berkala untuk memastikan akurasi data.</li>
-                    </ul>
+                <hr class="sidebar-divider">
+
+                <div class="sidebar-nav-section">
+                    <span class="sidebar-nav-section-title">Di Halaman Ini</span>
+                    <a href="#overview" class="sidebar-nav-link section-link">Overview Proyek</a>
+                    <a href="#departemen" class="sidebar-nav-link section-link">Departemen & Tugas Pokok</a>
+                    <a href="#target" class="sidebar-nav-link section-link">Target & Indikator Keberhasilan</a>
+                    <a href="#koordinasi" class="sidebar-nav-link section-link">Mekanisme Koordinasi</a>
                 </div>
 
-                <div class="section-card">
-                    <h3><span class="badge">DEPT. DIGITAL</span> Digital Intelligence & UX</h3>
-                    <p><strong>PIC:</strong> Ryan, Ervan, Dita, Mya</p>
+            </nav>
+        </aside>
+
+        <!-- Main content -->
+        <div class="docs-main">
+            <header>
+                <h1>Tugas Pokok & Fungsi</h1>
+                <p>Tim Myco-Tech - HIMAIF × HIMALOGI</p>
+            </header>
+
+            <main>
+                <section id="overview">
+                    <h2>Overview Proyek</h2>
+                    <p>Proyek Myco-Tech merupakan inisiatif kolaborasi antara HIMAIF dan HIMALOGI untuk mengembangkan sistem Smart-Kumbung dan swasembada bibit unggul di Desa Cirateun Kulon. Proyek ini mengintegrasikan teknologi Internet of Things (IoT) dengan teknik kloning jaringan untuk meningkatkan produktivitas budidaya jamur.</p>
+                </section>
+
+                <section id="departemen">
+                    <h2>Departemen & Tugas Pokok</h2>
+
+                    <div class="section-card">
+                        <h3><span class="badge">DEPT. BIOLOGI</span> Bio Consultant</h3>
+                        <p><strong>PIC:</strong> Marsha, Bagja, Triana & Rafly (4 orang)</p>
+                        <ul>
+                            <li><strong>Teknik Kloning Jaringan:</strong> Bertanggung jawab penuh atas implementasi teknik kloning jaringan untuk produksi bibit F0-F2 yang berkualitas tinggi dan mandiri.</li>
+                            <li><strong>SOP Sterilisasi:</strong> Menyusun dan mengimplementasikan Standard Operating Procedures (SOP) untuk sterilisasi kumbung dan perawatan baglog agar bebas kontaminasi.</li>
+                            <li><strong>Edukasi & Workshop:</strong> Menjadi pemateri utama dalam workshop edukasi biologi jamur kepada warga desa, memastikan transfer pengetahuan yang efektif.</li>
+                            <li><strong>Quality Control:</strong> Melakukan monitoring kualitas bibit dan memberikan rekomendasi perbaikan berdasarkan hasil observasi lapangan.</li>
+                        </ul>
+                    </div>
+
+                    <div class="section-card">
+                        <h3><span class="badge">DEPT. HARDWARE</span> Hardware & Field Engineering</h3>
+                        <p><strong>PIC:</strong> Okta, Wandi, Sinsin, Tia</p>
+                        <ul>
+                            <li><strong>Perakitan Perangkat IoT:</strong> Merakit dan mengkonfigurasi perangkat IoT (ESP32-S3, Sensor NPK 7-in-1, dan modul LoRa) untuk monitoring mikroklimat kumbung.</li>
+                            <li><strong>Instalasi Panel Surya:</strong> Melakukan instalasi panel surya sebagai sumber energi mandiri di kumbung, memastikan sistem dapat beroperasi 24/7.</li>
+                            <li><strong>Maintenance & Troubleshooting:</strong> Melakukan maintenance rutin dan troubleshooting perangkat keras langsung di lokasi untuk memastikan sistem berjalan optimal.</li>
+                            <li><strong>Testing & Calibration:</strong> Melakukan kalibrasi sensor dan testing sistem secara berkala untuk memastikan akurasi data.</li>
+                        </ul>
+                    </div>
+
+                    <div class="section-card">
+                        <h3><span class="badge">DEPT. DIGITAL</span> Digital Intelligence & UX</h3>
+                        <p><strong>PIC:</strong> Ryan, Ervan, Dita, Mya</p>
+                        <ul>
+                            <li><strong>Dashboard Cloud:</strong> Membangun dan memaintain dashboard cloud untuk akses data real-time yang dapat diakses dari mana saja.</li>
+                            <li><strong>UI/UX Design:</strong> Merancang antarmuka (UI/UX) aplikasi yang intuitif dan mudah digunakan oleh petani desa dengan berbagai tingkat literasi digital.</li>
+                            <li><strong>Data Processing:</strong> Mengolah data sensor menjadi informasi yang actionable, termasuk sistem notifikasi otomatis (Early Warning System).</li>
+                            <li><strong>Database Management:</strong> Mengelola penyimpanan data historis mikroklimat untuk keperluan analisis dan audit.</li>
+                        </ul>
+                    </div>
+
+                    <div class="section-card">
+                        <h3><span class="badge">ADMIN & LIAISON</span> Project Management</h3>
+                        <p><strong>PIC:</strong> Sinsin & Tim</p>
+                        <ul>
+                            <li><strong>Timeline & Budget:</strong> Mengatur timeline kerja menggunakan Gantt Chart dan mengelola administrasi keuangan proyek.</li>
+                            <li><strong>Branding & Publikasi:</strong> Mengembangkan strategi branding, publikasi media, dan dokumentasi kegiatan termasuk video dokumenter.</li>
+                            <li><strong>Koordinasi Workshop:</strong> Mengkoordinasi pelaksanaan workshop dan membangun hubungan baik dengan mitra Kelompok Tani Desa.</li>
+                            <li><strong>Reporting:</strong> Menyusun laporan progress berkala dan dokumentasi proyek untuk stakeholder.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="target">
+                    <h2>Target & Indikator Keberhasilan</h2>
                     <ul>
-                        <li><strong>Dashboard Cloud:</strong> Membangun dan memaintain dashboard cloud untuk akses data real-time yang dapat diakses dari mana saja.</li>
-                        <li><strong>UI/UX Design:</strong> Merancang antarmuka (UI/UX) aplikasi yang intuitif dan mudah digunakan oleh petani desa dengan berbagai tingkat literasi digital.</li>
-                        <li><strong>Data Processing:</strong> Mengolah data sensor menjadi informasi yang actionable, termasuk sistem notifikasi otomatis (Early Warning System).</li>
-                        <li><strong>Database Management:</strong> Mengelola penyimpanan data historis mikroklimat untuk keperluan analisis dan audit.</li>
+                        <li><strong>Peningkatan Produktivitas:</strong> Target kenaikan hasil panen sebesar 20-30% melalui optimasi kondisi mikroklimat.</li>
+                        <li><strong>Real-Time Monitoring:</strong> Sistem monitoring suhu dan kelembapan yang dapat diakses secara real-time oleh petani.</li>
+                        <li><strong>Kemandirian Bibit:</strong> Produksi bibit F0-F2 secara mandiri sehingga tidak bergantung pada supplier eksternal.</li>
+                        <li><strong>Sustainability:</strong> Sistem energi mandiri melalui panel surya yang menjamin operasional 24 jam.</li>
+                        <li><strong>Transfer Knowledge:</strong> Minimal 80% peserta workshop mampu memahami dan menerapkan teknik yang diajarkan.</li>
                     </ul>
-                </div>
+                </section>
 
-                <div class="section-card">
-                    <h3><span class="badge">ADMIN & LIAISON</span> Project Management</h3>
-                    <p><strong>PIC:</strong> Sinsin & Tim</p>
+                <section id="koordinasi">
+                    <h2>Mekanisme Koordinasi</h2>
                     <ul>
-                        <li><strong>Timeline & Budget:</strong> Mengatur timeline kerja menggunakan Gantt Chart dan mengelola administrasi keuangan proyek.</li>
-                        <li><strong>Branding & Publikasi:</strong> Mengembangkan strategi branding, publikasi media, dan dokumentasi kegiatan termasuk video dokumenter.</li>
-                        <li><strong>Koordinasi Workshop:</strong> Mengkoordinasi pelaksanaan workshop dan membangun hubungan baik dengan mitra Kelompok Tani Desa.</li>
-                        <li><strong>Reporting:</strong> Menyusun laporan progress berkala dan dokumentasi proyek untuk stakeholder.</li>
+                        <li>Rapat koordinasi mingguan untuk evaluasi progress dan problem solving.</li>
+                        <li>Sistem komunikasi terpadu menggunakan platform digital untuk koordinasi real-time.</li>
+                        <li>Dokumentasi setiap aktivitas lapangan dan capaian tim.</li>
+                        <li>Evaluasi berkala dengan stakeholder dan mitra kelompok tani.</li>
                     </ul>
-                </div>
-            </section>
+                </section>
+            </main>
 
-            <section>
-                <h2>Target & Indikator Keberhasilan</h2>
-                <ul>
-                    <li><strong>Peningkatan Produktivitas:</strong> Target kenaikan hasil panen sebesar 20-30% melalui optimasi kondisi mikroklimat.</li>
-                    <li><strong>Real-Time Monitoring:</strong> Sistem monitoring suhu dan kelembapan yang dapat diakses secara real-time oleh petani.</li>
-                    <li><strong>Kemandirian Bibit:</strong> Produksi bibit F0-F2 secara mandiri sehingga tidak bergantung pada supplier eksternal.</li>
-                    <li><strong>Sustainability:</strong> Sistem energi mandiri melalui panel surya yang menjamin operasional 24 jam.</li>
-                    <li><strong>Transfer Knowledge:</strong> Minimal 80% peserta workshop mampu memahami dan menerapkan teknik yang diajarkan.</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Mekanisme Koordinasi</h2>
-                <ul>
-                    <li>Rapat koordinasi mingguan untuk evaluasi progress dan problem solving.</li>
-                    <li>Sistem komunikasi terpadu menggunakan platform digital untuk koordinasi real-time.</li>
-                    <li>Dokumentasi setiap aktivitas lapangan dan capaian tim.</li>
-                    <li>Evaluasi berkala dengan stakeholder dan mitra kelompok tani.</li>
-                </ul>
-            </section>
-        </main>
-
-        <footer>
-            <p>© 2026 Myco-Tech Project - HIMAIF × HIMALOGI | Universitas Wanita Internasional</p>
-        </footer>
+            <footer>
+                <p>© 2026 Myco-Tech Project - HIMAIF × HIMALOGI | Universitas Wanita Internasional</p>
+            </footer>
+        </div>
     </div>
+
+    <script src="sidebar.js"></script>
 </body>
 </html>

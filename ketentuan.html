@@ -5,207 +5,244 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ketentuan - Myco-Tech</title>
     <link rel="stylesheet" href="github-minimal.css">
-
 </head>
-<body>
-    <div class="container">
-        <header>
-            <div class="logo-container">
-                <img src="https://github.com/user-attachments/assets/9de145b4-b16b-4ec4-9e88-2803e3b518d2" alt="HIMAIF Logo" class="logo-badge">
-                <img src="https://github.com/user-attachments/assets/6850b4f9-d61d-4342-aac4-dbf854c01710" alt="Myco-Tech Logo" class="logo-badge">
-                <img src="https://github.com/user-attachments/assets/629c12f6-d21f-46af-bb81-4cb589981cd7" alt="HIMALOGI Logo" class="logo-badge">
-            </div>
-            <div class="nav">
-                <a href="index.html">← Kembali ke Beranda</a>
-                <a href="tupoksi.html">Tupoksi</a>
-                <a href="profile-tim.html">Profil Tim</a>
-                <a href="dokumentasi.html">Dokumentasi</a>
-                <a href="kebijakan.html">Kebijakan</a>
-            </div>
-            <h1>Ketentuan & Aturan</h1>
-            <p>Tim Myco-Tech - HIMAIF × HIMALOGI</p>
-        </header>
+<body class="docs-page">
 
-        <main>
-            <section>
-                <h2>Ketentuan Umum</h2>
-                <p>Ketentuan ini mengatur hak, kewajiban, dan tanggung jawab seluruh anggota tim, mitra, dan stakeholder yang terlibat dalam Proyek Myco-Tech. Setiap pihak yang terlibat wajib memahami dan mematuhi ketentuan yang berlaku.</p>
-            </section>
+    <!-- Sticky top header -->
+    <header class="docs-top-header">
+        <div class="logo-container">
+            <img src="https://github.com/user-attachments/assets/9de145b4-b16b-4ec4-9e88-2803e3b518d2" alt="HIMAIF Logo" class="logo-badge">
+            <img src="https://github.com/user-attachments/assets/6850b4f9-d61d-4342-aac4-dbf854c01710" alt="Myco-Tech Logo" class="logo-badge">
+            <img src="https://github.com/user-attachments/assets/629c12f6-d21f-46af-bb81-4cb589981cd7" alt="HIMALOGI Logo" class="logo-badge">
+        </div>
+        <span class="docs-site-title">Myco-<span>Tech</span></span>
+        <button class="sidebar-toggle-btn" onclick="toggleSidebar()" aria-label="Toggle sidebar">☰</button>
+    </header>
 
-            <section>
-                <h2>Ketentuan Keanggotaan Tim</h2>
+    <div id="sidebar-backdrop" class="sidebar-backdrop" onclick="closeSidebar()"></div>
 
-                <div class="terms-card">
-                    <h3>Pasal 1: Kewajiban Anggota Tim</h3>
-                    <ol>
-                        <li>Setiap anggota tim wajib hadir dalam rapat koordinasi mingguan. Ketidakhadiran harus disertai alasan yang jelas dan dikonfirmasi minimal 1 hari sebelumnya.</li>
-                        <li>Menjalankan tugas sesuai dengan job description dan tupoksi yang telah ditetapkan.</li>
-                        <li>Membuat laporan progress kerja secara rutin setiap minggu.</li>
-                        <li>Menjaga kerahasiaan data dan informasi proyek.</li>
-                        <li>Berpartisipasi aktif dalam kegiatan lapangan dan workshop.</li>
-                        <li>Menyelesaikan tugas tepat waktu sesuai dengan timeline yang telah disepakati.</li>
-                    </ol>
+    <div class="docs-wrapper">
+
+        <!-- Left sidebar -->
+        <aside class="docs-sidebar" id="docs-sidebar">
+            <nav class="sidebar-nav" aria-label="Sidebar navigation">
+
+                <div class="sidebar-nav-section">
+                    <span class="sidebar-nav-section-title">Halaman</span>
+                    <a href="index.html" class="sidebar-nav-link">🏠 Beranda</a>
+                    <a href="tupoksi.html" class="sidebar-nav-link">📋 Tupoksi</a>
+                    <a href="profile-tim.html" class="sidebar-nav-link">👥 Profil Tim</a>
+                    <a href="dokumentasi.html" class="sidebar-nav-link">📚 Dokumentasi</a>
+                    <a href="kebijakan.html" class="sidebar-nav-link">📜 Kebijakan</a>
+                    <a href="ketentuan.html" class="sidebar-nav-link active">⚖️ Ketentuan</a>
                 </div>
 
-                <div class="terms-card">
-                    <h3>Pasal 2: Hak Anggota Tim</h3>
-                    <ol>
-                        <li>Mendapatkan informasi yang transparan terkait progress dan keuangan proyek.</li>
-                        <li>Menyampaikan ide, saran, dan kritik konstruktif untuk kemajuan proyek.</li>
-                        <li>Mendapatkan dukungan teknis dan konsultasi dari anggota tim lainnya.</li>
-                        <li>Mendapatkan pengakuan dan apresiasi atas kontribusi yang diberikan.</li>
-                        <li>Menggunakan dokumentasi dan hasil proyek untuk keperluan portofolio akademik.</li>
-                    </ol>
+                <hr class="sidebar-divider">
+
+                <div class="sidebar-nav-section">
+                    <span class="sidebar-nav-section-title">Di Halaman Ini</span>
+                    <a href="#umum" class="sidebar-nav-link section-link">Ketentuan Umum</a>
+                    <a href="#keanggotaan" class="sidebar-nav-link section-link">Keanggotaan Tim</a>
+                    <a href="#pelaksanaan" class="sidebar-nav-link section-link">Pelaksanaan Kegiatan</a>
+                    <a href="#dokumentasi" class="sidebar-nav-link section-link">Dokumentasi & Publikasi</a>
+                    <a href="#kemitraan" class="sidebar-nav-link section-link">Kemitraan</a>
+                    <a href="#evaluasi" class="sidebar-nav-link section-link">Evaluasi & Pelaporan</a>
+                    <a href="#penutup" class="sidebar-nav-link section-link">Ketentuan Penutup</a>
                 </div>
 
-                <div class="warning">
-                    <h3>Pasal 3: Sanksi Pelanggaran</h3>
-                    <p>Pelanggaran terhadap ketentuan yang berlaku akan dikenakan sanksi bertingkat:</p>
-                    <ol>
-                        <li><strong>Peringatan Lisan:</strong> Untuk pelanggaran ringan (keterlambatan laporan, ketidakhadiran tanpa keterangan 1x).</li>
-                        <li><strong>Peringatan Tertulis:</strong> Untuk pelanggaran sedang (ketidakhadiran berulang, kelalaian tugas).</li>
-                        <li><strong>Evaluasi Tim:</strong> Untuk pelanggaran berat (pelanggaran etika, ketidakhadiran lebih dari 3x tanpa alasan jelas).</li>
-                    </ol>
-                </div>
-            </section>
+            </nav>
+        </aside>
 
-            <section>
-                <h2>Ketentuan Pelaksanaan Kegiatan</h2>
+        <!-- Main content -->
+        <div class="docs-main">
+            <header>
+                <h1>Ketentuan & Aturan</h1>
+                <p>Tim Myco-Tech - HIMAIF × HIMALOGI</p>
+            </header>
 
-                <div class="terms-card">
-                    <h3>Pasal 4: Jadwal dan Timeline</h3>
-                    <ul>
-                        <li>Durasi proyek: 5 bulan (sesuai periode pelaksanaan yang telah ditetapkan).</li>
-                        <li>Setiap perubahan timeline harus diajukan dan mendapat persetujuan dari seluruh anggota tim.</li>
-                        <li>Target capaian harus terpenuhi sesuai dengan milestone yang telah ditentukan.</li>
-                    </ul>
+            <main>
+                <section id="umum">
+                    <h2>Ketentuan Umum</h2>
+                    <p>Ketentuan ini mengatur hak, kewajiban, dan tanggung jawab seluruh anggota tim, mitra, dan stakeholder yang terlibat dalam Proyek Myco-Tech. Setiap pihak yang terlibat wajib memahami dan mematuhi ketentuan yang berlaku.</p>
+                </section>
 
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Bulan</th>
-                                <th>Milestone Utama</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Bulan 1</td>
-                                <td>Persiapan, survey lokasi, dan koordinasi awal dengan mitra</td>
-                            </tr>
-                            <tr>
-                                <td>Bulan 2</td>
-                                <td>Instalasi perangkat IoT dan setup laboratorium kloning</td>
-                            </tr>
-                            <tr>
-                                <td>Bulan 3</td>
-                                <td>Testing sistem, workshop pertama, dan produksi bibit F0</td>
-                            </tr>
-                            <tr>
-                                <td>Bulan 4</td>
-                                <td>Monitoring intensif, produksi bibit F1-F2, workshop lanjutan</td>
-                            </tr>
-                            <tr>
-                                <td>Bulan 5</td>
-                                <td>Evaluasi hasil, dokumentasi, dan serah terima sistem</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <section id="keanggotaan">
+                    <h2>Ketentuan Keanggotaan Tim</h2>
 
-                <div class="terms-card">
-                    <h3>Pasal 5: Ketentuan Keuangan</h3>
-                    <ol>
-                        <li>Pencairan dana dilakukan secara bertahap sesuai dengan kebutuhan dan progress proyek.</li>
-                        <li>Setiap pengeluaran wajib disertai bukti pembayaran (kwitansi, invoice, atau nota) yang sah.</li>
-                        <li>Laporan keuangan dibuat setiap akhir bulan dan dipresentasikan kepada tim.</li>
-                        <li>Sisa dana (jika ada) akan dialokasikan untuk kegiatan keberlanjutan proyek atau dikembalikan sesuai kesepakatan.</li>
-                    </ol>
-                </div>
+                    <div class="terms-card">
+                        <h3>Pasal 1: Kewajiban Anggota Tim</h3>
+                        <ol>
+                            <li>Setiap anggota tim wajib hadir dalam rapat koordinasi mingguan. Ketidakhadiran harus disertai alasan yang jelas dan dikonfirmasi minimal 1 hari sebelumnya.</li>
+                            <li>Menjalankan tugas sesuai dengan job description dan tupoksi yang telah ditetapkan.</li>
+                            <li>Membuat laporan progress kerja secara rutin setiap minggu.</li>
+                            <li>Menjaga kerahasiaan data dan informasi proyek.</li>
+                            <li>Berpartisipasi aktif dalam kegiatan lapangan dan workshop.</li>
+                            <li>Menyelesaikan tugas tepat waktu sesuai dengan timeline yang telah disepakati.</li>
+                        </ol>
+                    </div>
 
-                <div class="terms-card">
-                    <h3>Pasal 6: Ketentuan Penggunaan Perangkat & Teknologi</h3>
-                    <ol>
-                        <li>Semua perangkat yang dibeli dengan dana proyek menjadi aset proyek.</li>
-                        <li>Setelah proyek selesai, perangkat diserahkan kepada mitra (Kelompok Tani Desa) untuk digunakan secara berkelanjutan.</li>
-                        <li>Maintenance dan troubleshooting dilakukan oleh tim selama masa proyek berlangsung.</li>
-                        <li>Serah terima perangkat dilakukan secara formal dengan dokumentasi lengkap.</li>
-                    </ol>
-                </div>
-            </section>
+                    <div class="terms-card">
+                        <h3>Pasal 2: Hak Anggota Tim</h3>
+                        <ol>
+                            <li>Mendapatkan informasi yang transparan terkait progress dan keuangan proyek.</li>
+                            <li>Menyampaikan ide, saran, dan kritik konstruktif untuk kemajuan proyek.</li>
+                            <li>Mendapatkan dukungan teknis dan konsultasi dari anggota tim lainnya.</li>
+                            <li>Mendapatkan pengakuan dan apresiasi atas kontribusi yang diberikan.</li>
+                            <li>Menggunakan dokumentasi dan hasil proyek untuk keperluan portofolio akademik.</li>
+                        </ol>
+                    </div>
 
-            <section>
-                <h2>Ketentuan Dokumentasi & Publikasi</h2>
+                    <div class="warning">
+                        <h3>Pasal 3: Sanksi Pelanggaran</h3>
+                        <p>Pelanggaran terhadap ketentuan yang berlaku akan dikenakan sanksi bertingkat:</p>
+                        <ol>
+                            <li><strong>Peringatan Lisan:</strong> Untuk pelanggaran ringan (keterlambatan laporan, ketidakhadiran tanpa keterangan 1x).</li>
+                            <li><strong>Peringatan Tertulis:</strong> Untuk pelanggaran sedang (ketidakhadiran berulang, kelalaian tugas).</li>
+                            <li><strong>Evaluasi Tim:</strong> Untuk pelanggaran berat (pelanggaran etika, ketidakhadiran lebih dari 3x tanpa alasan jelas).</li>
+                        </ol>
+                    </div>
+                </section>
 
-                <div class="terms-card">
-                    <h3>Pasal 7: Dokumentasi Proyek</h3>
-                    <ol>
-                        <li>Setiap kegiatan lapangan wajib didokumentasikan dalam bentuk foto dan video.</li>
-                        <li>Laporan tertulis dibuat untuk setiap milestone yang tercapai.</li>
-                        <li>Video dokumenter dibuat sebagai bentuk publikasi dan pembelajaran.</li>
-                        <li>Semua dokumentasi disimpan dalam repository yang dapat diakses oleh anggota tim.</li>
-                    </ol>
-                </div>
+                <section id="pelaksanaan">
+                    <h2>Ketentuan Pelaksanaan Kegiatan</h2>
 
-                <div class="terms-card">
-                    <h3>Pasal 8: Hak Kekayaan Intelektual</h3>
-                    <ol>
-                        <li>Semua hasil karya, inovasi, dan teknologi yang dihasilkan dari proyek ini merupakan hak bersama tim Myco-Tech.</li>
-                        <li>Publikasi ilmiah atau publikasi media wajib mencantumkan nama seluruh anggota tim yang berkontribusi.</li>
-                        <li>Penggunaan hasil proyek untuk kepentingan komersial harus mendapat persetujuan dari seluruh anggota tim.</li>
-                    </ol>
-                </div>
+                    <div class="terms-card">
+                        <h3>Pasal 4: Jadwal dan Timeline</h3>
+                        <ul>
+                            <li>Durasi proyek: 5 bulan (sesuai periode pelaksanaan yang telah ditetapkan).</li>
+                            <li>Setiap perubahan timeline harus diajukan dan mendapat persetujuan dari seluruh anggota tim.</li>
+                            <li>Target capaian harus terpenuhi sesuai dengan milestone yang telah ditentukan.</li>
+                        </ul>
 
-                <div class="info">
-                    <h3>Pasal 9: Publikasi & Media Sosial</h3>
-                    <ul>
-                        <li>Publikasi terkait proyek di media sosial atau media massa harus melalui koordinasi dengan tim Project Management.</li>
-                        <li>Konten publikasi harus merepresentasikan proyek secara akurat dan profesional.</li>
-                        <li>Setiap publikasi wajib mencantumkan logo dan credit HIMAIF × HIMALOGI.</li>
-                    </ul>
-                </div>
-            </section>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Bulan</th>
+                                    <th>Milestone Utama</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Bulan 1</td>
+                                    <td>Persiapan, survey lokasi, dan koordinasi awal dengan mitra</td>
+                                </tr>
+                                <tr>
+                                    <td>Bulan 2</td>
+                                    <td>Instalasi perangkat IoT dan setup laboratorium kloning</td>
+                                </tr>
+                                <tr>
+                                    <td>Bulan 3</td>
+                                    <td>Testing sistem, workshop pertama, dan produksi bibit F0</td>
+                                </tr>
+                                <tr>
+                                    <td>Bulan 4</td>
+                                    <td>Monitoring intensif, produksi bibit F1-F2, workshop lanjutan</td>
+                                </tr>
+                                <tr>
+                                    <td>Bulan 5</td>
+                                    <td>Evaluasi hasil, dokumentasi, dan serah terima sistem</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-            <section>
-                <h2>Ketentuan Kemitraan</h2>
+                    <div class="terms-card">
+                        <h3>Pasal 5: Ketentuan Keuangan</h3>
+                        <ol>
+                            <li>Pencairan dana dilakukan secara bertahap sesuai dengan kebutuhan dan progress proyek.</li>
+                            <li>Setiap pengeluaran wajib disertai bukti pembayaran (kwitansi, invoice, atau nota) yang sah.</li>
+                            <li>Laporan keuangan dibuat setiap akhir bulan dan dipresentasikan kepada tim.</li>
+                            <li>Sisa dana (jika ada) akan dialokasikan untuk kegiatan keberlanjutan proyek atau dikembalikan sesuai kesepakatan.</li>
+                        </ol>
+                    </div>
 
-                <div class="terms-card">
-                    <h3>Pasal 10: Kerjasama dengan Kelompok Tani</h3>
-                    <ol>
-                        <li>Tim Myco-Tech berkomitmen untuk memberikan transfer knowledge kepada petani mitra.</li>
-                        <li>Petani mitra berhak mendapatkan pelatihan dan pendampingan selama proyek berlangsung.</li>
-                        <li>Petani mitra wajib berpartisipasi aktif dalam workshop dan kegiatan lapangan.</li>
-                        <li>Kelompok Tani Desa menjadi pemilik dan pengelola sistem setelah proyek berakhir.</li>
-                    </ol>
-                </div>
-            </section>
+                    <div class="terms-card">
+                        <h3>Pasal 6: Ketentuan Penggunaan Perangkat & Teknologi</h3>
+                        <ol>
+                            <li>Semua perangkat yang dibeli dengan dana proyek menjadi aset proyek.</li>
+                            <li>Setelah proyek selesai, perangkat diserahkan kepada mitra (Kelompok Tani Desa) untuk digunakan secara berkelanjutan.</li>
+                            <li>Maintenance dan troubleshooting dilakukan oleh tim selama masa proyek berlangsung.</li>
+                            <li>Serah terima perangkat dilakukan secara formal dengan dokumentasi lengkap.</li>
+                        </ol>
+                    </div>
+                </section>
 
-            <section>
-                <h2>Ketentuan Evaluasi & Pelaporan</h2>
+                <section id="dokumentasi">
+                    <h2>Ketentuan Dokumentasi & Publikasi</h2>
 
-                <div class="terms-card">
-                    <h3>Pasal 11: Monitoring & Evaluasi</h3>
-                    <ul>
-                        <li>Evaluasi internal dilakukan setiap 2 minggu sekali untuk menilai progress dan kendala.</li>
-                        <li>Evaluasi dengan stakeholder eksternal dilakukan setiap akhir bulan.</li>
-                        <li>Laporan akhir proyek dibuat komprehensif mencakup seluruh aspek pelaksanaan.</li>
-                        <li>Feedback dan saran dari evaluasi digunakan untuk perbaikan berkelanjutan.</li>
-                    </ul>
-                </div>
-            </section>
+                    <div class="terms-card">
+                        <h3>Pasal 7: Dokumentasi Proyek</h3>
+                        <ol>
+                            <li>Setiap kegiatan lapangan wajib didokumentasikan dalam bentuk foto dan video.</li>
+                            <li>Laporan tertulis dibuat untuk setiap milestone yang tercapai.</li>
+                            <li>Video dokumenter dibuat sebagai bentuk publikasi dan pembelajaran.</li>
+                            <li>Semua dokumentasi disimpan dalam repository yang dapat diakses oleh anggota tim.</li>
+                        </ol>
+                    </div>
 
-            <section>
-                <h2>Ketentuan Penutup</h2>
-                <p>Ketentuan ini berlaku sejak tanggal penandatanganan kesepakatan tim dan dapat direvisi atas kesepakatan bersama seluruh anggota tim. Hal-hal yang belum diatur dalam ketentuan ini akan diselesaikan melalui musyawarah tim.</p>
+                    <div class="terms-card">
+                        <h3>Pasal 8: Hak Kekayaan Intelektual</h3>
+                        <ol>
+                            <li>Semua hasil karya, inovasi, dan teknologi yang dihasilkan dari proyek ini merupakan hak bersama tim Myco-Tech.</li>
+                            <li>Publikasi ilmiah atau publikasi media wajib mencantumkan nama seluruh anggota tim yang berkontribusi.</li>
+                            <li>Penggunaan hasil proyek untuk kepentingan komersial harus mendapat persetujuan dari seluruh anggota tim.</li>
+                        </ol>
+                    </div>
 
-                <div class="info">
-                    <p><strong>Persetujuan:</strong> Dengan bergabung dalam Tim Myco-Tech, setiap anggota dianggap telah membaca, memahami, dan menyetujui seluruh ketentuan yang berlaku.</p>
-                </div>
-            </section>
-        </main>
+                    <div class="info">
+                        <h3>Pasal 9: Publikasi & Media Sosial</h3>
+                        <ul>
+                            <li>Publikasi terkait proyek di media sosial atau media massa harus melalui koordinasi dengan tim Project Management.</li>
+                            <li>Konten publikasi harus merepresentasikan proyek secara akurat dan profesional.</li>
+                            <li>Setiap publikasi wajib mencantumkan logo dan credit HIMAIF × HIMALOGI.</li>
+                        </ul>
+                    </div>
+                </section>
 
-        <footer>
-            <p>© 2026 Myco-Tech Project - HIMAIF × HIMALOGI | Universitas Wanita Internasional</p>
-        </footer>
+                <section id="kemitraan">
+                    <h2>Ketentuan Kemitraan</h2>
+
+                    <div class="terms-card">
+                        <h3>Pasal 10: Kerjasama dengan Kelompok Tani</h3>
+                        <ol>
+                            <li>Tim Myco-Tech berkomitmen untuk memberikan transfer knowledge kepada petani mitra.</li>
+                            <li>Petani mitra berhak mendapatkan pelatihan dan pendampingan selama proyek berlangsung.</li>
+                            <li>Petani mitra wajib berpartisipasi aktif dalam workshop dan kegiatan lapangan.</li>
+                            <li>Kelompok Tani Desa menjadi pemilik dan pengelola sistem setelah proyek berakhir.</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="evaluasi">
+                    <h2>Ketentuan Evaluasi & Pelaporan</h2>
+
+                    <div class="terms-card">
+                        <h3>Pasal 11: Monitoring & Evaluasi</h3>
+                        <ul>
+                            <li>Evaluasi internal dilakukan setiap 2 minggu sekali untuk menilai progress dan kendala.</li>
+                            <li>Evaluasi dengan stakeholder eksternal dilakukan setiap akhir bulan.</li>
+                            <li>Laporan akhir proyek dibuat komprehensif mencakup seluruh aspek pelaksanaan.</li>
+                            <li>Feedback dan saran dari evaluasi digunakan untuk perbaikan berkelanjutan.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="penutup">
+                    <h2>Ketentuan Penutup</h2>
+                    <p>Ketentuan ini berlaku sejak tanggal penandatanganan kesepakatan tim dan dapat direvisi atas kesepakatan bersama seluruh anggota tim. Hal-hal yang belum diatur dalam ketentuan ini akan diselesaikan melalui musyawarah tim.</p>
+
+                    <div class="info">
+                        <p><strong>Persetujuan:</strong> Dengan bergabung dalam Tim Myco-Tech, setiap anggota dianggap telah membaca, memahami, dan menyetujui seluruh ketentuan yang berlaku.</p>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <p>© 2026 Myco-Tech Project - HIMAIF × HIMALOGI | Universitas Wanita Internasional</p>
+            </footer>
+        </div>
     </div>
+
+    <script src="sidebar.js"></script>
 </body>
 </html>
